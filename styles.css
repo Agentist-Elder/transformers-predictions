@@ -524,6 +524,151 @@ header h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-icon {
+    color: #667eea;
+    cursor: pointer;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    padding: 5px;
+    border-radius: 50%;
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.info-icon:hover {
+    opacity: 1;
+    background: rgba(102, 126, 234, 0.2);
+    transform: scale(1.1);
+}
+
+.accuracy-card .card-header {
+    margin-bottom: 15px;
+}
+
+.accuracy-card .card-header h4 {
+    margin: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(3px);
+}
+
+.modal-content {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-header {
+    padding: 25px 30px 15px;
+    border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.close-modal {
+    font-size: 2rem;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    color: #667eea;
+}
+
+.modal-body {
+    padding: 25px 30px 30px;
+}
+
+.modal-body #modalDescription {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.examples-section {
+    display: grid;
+    gap: 20px;
+}
+
+.example-good, .example-bad {
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid;
+}
+
+.example-good {
+    background: #f8fff8;
+    border-left-color: #4caf50;
+}
+
+.example-bad {
+    background: #fff8f8;
+    border-left-color: #f44336;
+}
+
+.example-good h4, .example-bad h4 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+
+.example-good h4 {
+    color: #2e7d32;
+}
+
+.example-bad h4 {
+    color: #c62828;
+}
+
+.example-good p, .example-bad p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;

@@ -32,28 +32,40 @@
 
             <div class="overview-cards">
                 <div class="overview-card">
-                    <div class="card-icon">📊</div>
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                        <i class="info-icon" data-metric="total-tickers">ℹ️</i>
+                    </div>
                     <div class="card-content">
                         <div class="card-number" id="totalTickers">5,541</div>
                         <div class="card-label">Stock Tickers</div>
                     </div>
                 </div>
                 <div class="overview-card">
-                    <div class="card-icon">🎯</div>
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <i class="info-icon" data-metric="mean-score">ℹ️</i>
+                    </div>
                     <div class="card-content">
                         <div class="card-number" id="meanScore">86.8</div>
                         <div class="card-label">Mean Accuracy Score</div>
                     </div>
                 </div>
                 <div class="overview-card">
-                    <div class="card-icon">⚡</div>
+                    <div class="card-header">
+                        <div class="card-icon">⚡</div>
+                        <i class="info-icon" data-metric="excellent-quality">ℹ️</i>
+                    </div>
                     <div class="card-content">
                         <div class="card-number" id="excellentPct">76%</div>
                         <div class="card-label">Excellent Quality</div>
                     </div>
                 </div>
                 <div class="overview-card">
-                    <div class="card-icon">🔍</div>
+                    <div class="card-header">
+                        <div class="card-icon">🔍</div>
+                        <i class="info-icon" data-metric="lookback-period">ℹ️</i>
+                    </div>
                     <div class="card-content">
                         <div class="card-number">50</div>
                         <div class="card-label">Days Lookback</div>
@@ -65,7 +77,10 @@
                 <h3>🎯 OHLCV Prediction Accuracy</h3>
                 <div class="accuracy-grid">
                     <div class="accuracy-card">
-                        <h4>Open Price</h4>
+                        <div class="card-header">
+                            <h4>Open Price</h4>
+                            <i class="info-icon" data-metric="open-price">ℹ️</i>
+                        </div>
                         <div class="accuracy-stats">
                             <div class="stat-item">
                                 <span class="stat-label">MAPE:</span>
@@ -82,7 +97,10 @@
                         </div>
                     </div>
                     <div class="accuracy-card">
-                        <h4>High Price</h4>
+                        <div class="card-header">
+                            <h4>High Price</h4>
+                            <i class="info-icon" data-metric="high-price">ℹ️</i>
+                        </div>
                         <div class="accuracy-stats">
                             <div class="stat-item">
                                 <span class="stat-label">MAPE:</span>
@@ -99,7 +117,10 @@
                         </div>
                     </div>
                     <div class="accuracy-card">
-                        <h4>Low Price</h4>
+                        <div class="card-header">
+                            <h4>Low Price</h4>
+                            <i class="info-icon" data-metric="low-price">ℹ️</i>
+                        </div>
                         <div class="accuracy-stats">
                             <div class="stat-item">
                                 <span class="stat-label">MAPE:</span>
@@ -116,7 +137,10 @@
                         </div>
                     </div>
                     <div class="accuracy-card">
-                        <h4>Close Price</h4>
+                        <div class="card-header">
+                            <h4>Close Price</h4>
+                            <i class="info-icon" data-metric="close-price">ℹ️</i>
+                        </div>
                         <div class="accuracy-stats">
                             <div class="stat-item">
                                 <span class="stat-label">MAPE:</span>
@@ -325,6 +349,29 @@
                             <span class="param-label">Resistance Level:</span>
                             $<span id="resistanceLevel"></span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div id="infoModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Metric Information</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="modalDescription"></div>
+                <div class="examples-section">
+                    <div class="example-good">
+                        <h4>✅ Good Performance Example</h4>
+                        <p id="goodExample"></p>
+                    </div>
+                    <div class="example-bad">
+                        <h4>❌ Poor Performance Example</h4>
+                        <p id="badExample"></p>
                     </div>
                 </div>
             </div>
