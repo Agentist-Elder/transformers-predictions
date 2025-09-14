@@ -152,6 +152,42 @@ class OHLCVDashboard {
                 description: 'Accuracy of predicting the final closing price of each trading day. This is the most important metric for end-of-day trading strategies and portfolio valuation.',
                 goodExample: '<strong>Exceptional (3.04% MAPE):</strong> Close price predictions are highly accurate with 83.4% within ±5%, enabling reliable end-of-day trading strategies.',
                 badExample: '<strong>Poor (7%+ MAPE):</strong> Inaccurate close predictions make it difficult to assess portfolio performance and plan next-day trading strategies.'
+            },
+            'ticker-open-accuracy': {
+                title: 'Individual Open Price Performance',
+                description: 'This ticker\'s specific accuracy for predicting opening prices over the 5-day forecast period. Lower MAPE values and higher accuracy percentages indicate better performance for this stock.',
+                goodExample: '<strong>Excellent Performance:</strong> MAPE < 3% with 80%+ accuracy within ±5% means this ticker\'s opening prices are highly predictable, suitable for gap trading strategies.',
+                badExample: '<strong>Poor Performance:</strong> MAPE > 8% with <50% accuracy within ±5% suggests this ticker has unpredictable opening behavior, requiring wider stop-losses.'
+            },
+            'ticker-high-accuracy': {
+                title: 'Individual High Price Performance',
+                description: 'This ticker\'s accuracy for predicting daily high prices. Important for setting profit targets and understanding this stock\'s intraday momentum patterns.',
+                goodExample: '<strong>Strong Predictability:</strong> Accurate high predictions (MAPE < 4%) help identify optimal exit points and resistance levels for this specific stock.',
+                badExample: '<strong>Weak Predictability:</strong> Poor high predictions (MAPE > 8%) make it difficult to set appropriate profit targets and may lead to early exits or missed opportunities.'
+            },
+            'ticker-low-accuracy': {
+                title: 'Individual Low Price Performance',
+                description: 'This ticker\'s accuracy for predicting daily low prices. Critical for stop-loss placement and risk management specific to this stock\'s volatility patterns.',
+                goodExample: '<strong>Reliable Support Prediction:</strong> Accurate low predictions (MAPE < 4%) enable precise stop-loss placement and support level identification for this ticker.',
+                badExample: '<strong>Unreliable Support:</strong> Poor low predictions (MAPE > 8%) increase risk of premature stop-outs or inadequate protection against this stock\'s downside moves.'
+            },
+            'ticker-close-accuracy': {
+                title: 'Individual Close Price Performance',
+                description: 'This ticker\'s accuracy for predicting closing prices. The most critical metric for this stock\'s end-of-day valuation and next-day gap predictions.',
+                goodExample: '<strong>Highly Reliable:</strong> Excellent close predictions (MAPE < 3%) make this ticker suitable for swing trading and portfolio strategies with predictable end-of-day values.',
+                badExample: '<strong>Unpredictable:</strong> Poor close predictions (MAPE > 7%) suggest this ticker has erratic closing behavior, requiring more conservative position sizing.'
+            },
+            'prediction-parameters': {
+                title: 'Model Configuration',
+                description: 'The specific parameters used to generate predictions for this ticker, including the historical context window and forecast horizon with uncertainty quantification.',
+                goodExample: '<strong>Optimal Setup:</strong> 50-day lookback provides sufficient pattern recognition while 5-day predictions with 10 Monte Carlo simulations offer practical trading horizons with uncertainty bounds.',
+                badExample: '<strong>Poor Setup:</strong> Too short lookback (5 days) misses patterns, while too long predictions (20+ days) become unreliable due to market volatility and news events.'
+            },
+            'price-analysis': {
+                title: 'Technical Price Levels',
+                description: 'Key technical analysis levels for this specific ticker including support/resistance levels derived from historical price action and current trading range context.',
+                goodExample: '<strong>Strong Levels:</strong> Clear support/resistance levels with multiple tests provide reliable entry/exit points and risk management anchors for trading this ticker.',
+                badExample: '<strong>Weak Levels:</strong> Poorly defined support/resistance levels indicate ranging markets or insufficient historical data, making technical analysis less reliable.'
             }
         };
 
