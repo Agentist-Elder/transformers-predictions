@@ -54,22 +54,22 @@ class OHLCVDashboard {
     }
 
     initializeModalListeners() {
-        // Info icon listeners
-        document.querySelectorAll('.info-icon').forEach(icon => {
-            icon.addEventListener('click', (e) => {
+        // Use event delegation for better reliability
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('info-icon')) {
                 e.stopPropagation();
                 const metric = e.target.getAttribute('data-metric');
                 this.showModal(metric);
-            });
-
-            // For desktop hover
-            icon.addEventListener('mouseenter', (e) => {
-                if (window.innerWidth > 768) {
-                    const metric = e.target.getAttribute('data-metric');
-                    this.showModal(metric);
-                }
-            });
+            }
         });
+
+        // Desktop hover with event delegation
+        document.addEventListener('mouseenter', (e) => {
+            if (e.target.classList.contains('info-icon') && window.innerWidth > 768) {
+                const metric = e.target.getAttribute('data-metric');
+                this.showModal(metric);
+            }
+        }, true);
 
         // Close modal listeners
         document.getElementById('infoModal').addEventListener('click', (e) => {
