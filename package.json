@@ -1,7 +1,7 @@
 {
-  "name": "ohlcv-dashboard",
+  "name": "transformers-predictions",
   "version": "1.0.0",
-  "description": "OHLCV Stock Prediction Dashboard",
+  "description": "Transformers Predictions Dashboard",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

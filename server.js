@@ -65,6 +65,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`OHLCV Dashboard server running on port ${PORT}`);
+  console.log(`Transformers Predictions server running on port ${PORT}`);
   console.log(`Data directory: ${OHLCV_DATA_PATH}`);
 });

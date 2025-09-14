@@ -1,10 +1,10 @@
-# 📊 OHLCV Stock Prediction Dashboard
+# 🤖 Transformers Predictions
 
-A comprehensive web dashboard for visualizing OHLCV (Open, High, Low, Close, Volume) stock prediction data with Monte Carlo analysis.
+A comprehensive web dashboard for visualizing OHLCV (Open, High, Low, Close, Volume) stock prediction data with Monte Carlo analysis powered by transformer models.
 
 ## 🌐 Live Demo
 
-**GitHub Pages**: https://jedarden.github.io/ohlcv-dashboard
+**GitHub Pages**: https://jedarden.github.io/transformers-predictions
 
 ## ✨ Key Features
 
@@ -88,8 +88,8 @@ Each ticker includes:
 ### **Local Development**
 ```bash
 # Clone the repository
-git clone https://github.com/jedarden/ohlcv-dashboard.git
-cd ohlcv-dashboard
+git clone https://github.com/jedarden/transformers-predictions.git
+cd transformers-predictions
 
 # Serve locally (optional - can open index.html directly)
 python -m http.server 8000
@@ -159,9 +159,9 @@ The dashboard expects JSON files with this structure:
 
 ## 🔗 Links
 
-- **Live Dashboard**: https://jedarden.github.io/ohlcv-dashboard
-- **Source Code**: https://github.com/jedarden/ohlcv-dashboard
-- **Issues**: https://github.com/jedarden/ohlcv-dashboard/issues
+- **Live Dashboard**: https://jedarden.github.io/transformers-predictions
+- **Source Code**: https://github.com/jedarden/transformers-predictions
+- **Issues**: https://github.com/jedarden/transformers-predictions/issues
 
 ---
 
