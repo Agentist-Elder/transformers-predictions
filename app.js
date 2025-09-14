@@ -54,7 +54,7 @@ class OHLCVDashboard {
     }
 
     initializeModalListeners() {
-        // Use event delegation for better reliability
+        // Click/tap only for both desktop and mobile
         document.addEventListener('click', (e) => {
             if (e.target.classList.contains('info-icon')) {
                 e.stopPropagation();
@@ -62,14 +62,6 @@ class OHLCVDashboard {
                 this.showModal(metric);
             }
         });
-
-        // Desktop hover with event delegation
-        document.addEventListener('mouseenter', (e) => {
-            if (e.target.classList.contains('info-icon') && window.innerWidth > 768) {
-                const metric = e.target.getAttribute('data-metric');
-                this.showModal(metric);
-            }
-        }, true);
 
         // Close modal listeners
         document.getElementById('infoModal').addEventListener('click', (e) => {
