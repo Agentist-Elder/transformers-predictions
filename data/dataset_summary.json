@@ -1,0 +1,56 @@
+{
+  "dataset_overview": {
+    "total_tickers": 5541,
+    "model_type": "complete-ohlcv-monte-carlo",
+    "avg_lookback_days": 50,
+    "avg_prediction_days": 5,
+    "avg_mc_simulations": 10
+  },
+  "overall_performance": {
+    "mean_score": 86.84,
+    "median_score": 99.44,
+    "std_score": 21.88,
+    "min_score": 0.0,
+    "max_score": 100.0
+  },
+  "quality_distribution": {
+    "fair": 596,
+    "good": 473,
+    "excellent": 4208,
+    "poor": 224,
+    "unknown": 40
+  },
+  "accuracy_metrics": {
+    "open_price": {
+      "mean_mape": 2.51,
+      "median_mape": 1.56,
+      "mean_accuracy_5pct": 87.2,
+      "mean_accuracy_10pct": 95.9
+    },
+    "high_price": {
+      "mean_mape": 3.44,
+      "median_mape": 2.21,
+      "mean_accuracy_5pct": 79.8,
+      "mean_accuracy_10pct": 93.5
+    },
+    "low_price": {
+      "mean_mape": 3.42,
+      "median_mape": 2.07,
+      "mean_accuracy_5pct": 80.5,
+      "mean_accuracy_10pct": 93.7
+    },
+    "close_price": {
+      "mean_mape": 3.04,
+      "median_mape": 1.85,
+      "mean_accuracy_5pct": 83.4,
+      "mean_accuracy_10pct": 94.6
+    }
+  },
+  "score_percentiles": {
+    "p10": 55.58,
+    "p25": 84.8,
+    "p50": 99.44,
+    "p75": 99.7,
+    "p90": 99.82
+  }
+}

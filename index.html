@@ -24,6 +24,176 @@
 
         <div id="errorMessage" class="error-message hidden"></div>
 
+        <div id="summaryContent" class="summary-content">
+            <div class="summary-header">
+                <h2>🤖 Transformers Predictions - Dataset Overview</h2>
+                <p class="summary-subtitle">Comprehensive analysis of AI-powered stock prediction performance across the complete market</p>
+            </div>
+
+            <div class="overview-cards">
+                <div class="overview-card">
+                    <div class="card-icon">📊</div>
+                    <div class="card-content">
+                        <div class="card-number" id="totalTickers">5,541</div>
+                        <div class="card-label">Stock Tickers</div>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-content">
+                        <div class="card-number" id="meanScore">86.8</div>
+                        <div class="card-label">Mean Accuracy Score</div>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-content">
+                        <div class="card-number" id="excellentPct">76%</div>
+                        <div class="card-label">Excellent Quality</div>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">🔍</div>
+                    <div class="card-content">
+                        <div class="card-number">50</div>
+                        <div class="card-label">Days Lookback</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accuracy-summary">
+                <h3>🎯 OHLCV Prediction Accuracy</h3>
+                <div class="accuracy-grid">
+                    <div class="accuracy-card">
+                        <h4>Open Price</h4>
+                        <div class="accuracy-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">MAPE:</span>
+                                <span class="stat-value" id="openMAPE">2.51%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">±5% Accuracy:</span>
+                                <span class="stat-value" id="openAcc5">87.2%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">±10% Accuracy:</span>
+                                <span class="stat-value" id="openAcc10">95.9%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accuracy-card">
+                        <h4>High Price</h4>
+                        <div class="accuracy-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">MAPE:</span>
+                                <span class="stat-value" id="highMAPE">3.44%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">±5% Accuracy:</span>
+                                <span class="stat-value" id="highAcc5">79.8%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">±10% Accuracy:</span>
+                                <span class="stat-value" id="highAcc10">93.5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accuracy-card">
+                        <h4>Low Price</h4>
+                        <div class="accuracy-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">MAPE:</span>
+                                <span class="stat-value" id="lowMAPE">3.42%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">±5% Accuracy:</span>
+                                <span class="stat-value" id="lowAcc5">80.5%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">±10% Accuracy:</span>
+                                <span class="stat-value" id="lowAcc10">93.7%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accuracy-card">
+                        <h4>Close Price</h4>
+                        <div class="accuracy-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">MAPE:</span>
+                                <span class="stat-value" id="closeMAPE">3.04%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">±5% Accuracy:</span>
+                                <span class="stat-value" id="closeAcc5">83.4%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">±10% Accuracy:</span>
+                                <span class="stat-value" id="closeAcc10">94.6%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="performance-insights">
+                <div class="insight-card">
+                    <h3>📈 Performance Distribution</h3>
+                    <div class="distribution-stats">
+                        <div class="dist-item">
+                            <span class="dist-label">Excellent (4,208 tickers):</span>
+                            <span class="dist-value">75.9%</span>
+                        </div>
+                        <div class="dist-item">
+                            <span class="dist-label">Good (473 tickers):</span>
+                            <span class="dist-value">8.5%</span>
+                        </div>
+                        <div class="dist-item">
+                            <span class="dist-label">Fair (596 tickers):</span>
+                            <span class="dist-value">10.8%</span>
+                        </div>
+                        <div class="dist-item">
+                            <span class="dist-label">Poor (224 tickers):</span>
+                            <span class="dist-value">4.0%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-card">
+                    <h3>🔬 Model Characteristics</h3>
+                    <div class="model-stats">
+                        <div class="model-item">
+                            <span class="model-label">Model Type:</span>
+                            <span class="model-value">Complete OHLCV Monte Carlo</span>
+                        </div>
+                        <div class="model-item">
+                            <span class="model-label">Prediction Horizon:</span>
+                            <span class="model-value">5 Trading Days</span>
+                        </div>
+                        <div class="model-item">
+                            <span class="model-label">Historical Context:</span>
+                            <span class="model-value">50 Days Lookback</span>
+                        </div>
+                        <div class="model-item">
+                            <span class="model-label">Monte Carlo Simulations:</span>
+                            <span class="model-value">10 Paths per Ticker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-prompt">
+                <p>💡 <strong>Start exploring:</strong> Type any ticker symbol above to view detailed predictions and analysis</p>
+                <div class="popular-tickers">
+                    <span class="ticker-tag" onclick="searchTicker('AAPL')">AAPL</span>
+                    <span class="ticker-tag" onclick="searchTicker('TSLA')">TSLA</span>
+                    <span class="ticker-tag" onclick="searchTicker('MSFT')">MSFT</span>
+                    <span class="ticker-tag" onclick="searchTicker('GOOGL')">GOOGL</span>
+                    <span class="ticker-tag" onclick="searchTicker('NVDA')">NVDA</span>
+                    <span class="ticker-tag" onclick="searchTicker('META')">META</span>
+                </div>
+            </div>
+        </div>
+
         <div id="dashboardContent" class="hidden">
             <!-- Ticker Info Header -->
             <div class="ticker-header">

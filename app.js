@@ -3,7 +3,9 @@ class OHLCVDashboard {
         this.currentData = null;
         this.chart = null;
         this.searchTimeout = null;
+        this.summaryData = null;
         this.initializeEventListeners();
+        this.loadSummaryStats();
     }
 
     initializeEventListeners() {
@@ -19,7 +21,7 @@ class OHLCVDashboard {
                     this.searchTicker(ticker);
                 }, 300); // 300ms debounce
             } else {
-                this.clearDashboard();
+                this.showSummaryStats();
             }
         });
 
@@ -84,12 +86,66 @@ class OHLCVDashboard {
         document.getElementById('dashboardContent').classList.add('hidden');
         document.getElementById('errorMessage').classList.add('hidden');
         document.getElementById('loadingIndicator').classList.add('hidden');
+        document.getElementById('summaryContent').classList.add('hidden');
+    }
+
+    showSummaryStats() {
+        document.getElementById('dashboardContent').classList.add('hidden');
+        document.getElementById('errorMessage').classList.add('hidden');
+        document.getElementById('loadingIndicator').classList.add('hidden');
+        document.getElementById('summaryContent').classList.remove('hidden');
+    }
+
+    async loadSummaryStats() {
+        try {
+            const response = await fetch('data/dataset_summary.json');
+            if (response.ok) {
+                this.summaryData = await response.json();
+                this.populateSummaryStats();
+            }
+        } catch (error) {
+            console.error('Error loading summary stats:', error);
+        }
+    }
+
+    populateSummaryStats() {
+        if (!this.summaryData) return;
+
+        const summary = this.summaryData;
+
+        // Update overview cards with actual data
+        const totalTickers = summary.dataset_overview.total_tickers;
+        const excellentCount = summary.quality_distribution.excellent || 0;
+        const excellentPct = Math.round((excellentCount / totalTickers) * 100);
+
+        document.getElementById('totalTickers').textContent = totalTickers.toLocaleString();
+        document.getElementById('meanScore').textContent = summary.overall_performance.mean_score;
+        document.getElementById('excellentPct').textContent = excellentPct + '%';
+
+        // Update accuracy metrics
+        const acc = summary.accuracy_metrics;
+        document.getElementById('openMAPE').textContent = acc.open_price.mean_mape + '%';
+        document.getElementById('openAcc5').textContent = acc.open_price.mean_accuracy_5pct + '%';
+        document.getElementById('openAcc10').textContent = acc.open_price.mean_accuracy_10pct + '%';
+
+        document.getElementById('highMAPE').textContent = acc.high_price.mean_mape + '%';
+        document.getElementById('highAcc5').textContent = acc.high_price.mean_accuracy_5pct + '%';
+        document.getElementById('highAcc10').textContent = acc.high_price.mean_accuracy_10pct + '%';
+
+        document.getElementById('lowMAPE').textContent = acc.low_price.mean_mape + '%';
+        document.getElementById('lowAcc5').textContent = acc.low_price.mean_accuracy_5pct + '%';
+        document.getElementById('lowAcc10').textContent = acc.low_price.mean_accuracy_10pct + '%';
+
+        document.getElementById('closeMAPE').textContent = acc.close_price.mean_mape + '%';
+        document.getElementById('closeAcc5').textContent = acc.close_price.mean_accuracy_5pct + '%';
+        document.getElementById('closeAcc10').textContent = acc.close_price.mean_accuracy_10pct + '%';
     }
 
     showLoading() {
         document.getElementById('loadingIndicator').classList.remove('hidden');
         document.getElementById('dashboardContent').classList.add('hidden');
         document.getElementById('errorMessage').classList.add('hidden');
+        document.getElementById('summaryContent').classList.add('hidden');
     }
 
     showError(message) {
@@ -97,11 +153,13 @@ class OHLCVDashboard {
         document.getElementById('errorMessage').classList.remove('hidden');
         document.getElementById('loadingIndicator').classList.add('hidden');
         document.getElementById('dashboardContent').classList.add('hidden');
+        document.getElementById('summaryContent').classList.add('hidden');
     }
 
     displayDashboard(data) {
         document.getElementById('loadingIndicator').classList.add('hidden');
         document.getElementById('errorMessage').classList.add('hidden');
+        document.getElementById('summaryContent').classList.add('hidden');
         document.getElementById('dashboardContent').classList.remove('hidden');
 
         // Populate ticker info
@@ -618,7 +676,13 @@ class OHLCVDashboard {
     }
 }
 
+// Global function for clickable ticker tags
+function searchTicker(ticker) {
+    document.getElementById('tickerSearch').value = ticker;
+    window.dashboard.searchTicker(ticker);
+}
+
 // Initialize the dashboard when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    new OHLCVDashboard();
+    window.dashboard = new OHLCVDashboard();
 });
