@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OHLCV Stock Prediction Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 OHLCV Stock Prediction Dashboard</h1>
+            <div class="search-container">
+                <input type="text" id="tickerSearch" placeholder="Enter ticker symbol (e.g., AAPL)" maxlength="10">
+                <button id="searchBtn">Search</button>
+            </div>
+        </header>
+
+        <div id="loadingIndicator" class="loading hidden">
+            <div class="spinner"></div>
+            <span>Loading ticker data...</span>
+        </div>
+
+        <div id="errorMessage" class="error-message hidden"></div>
+
+        <div id="dashboardContent" class="hidden">
+            <!-- Ticker Info Header -->
+            <div class="ticker-header">
+                <div class="ticker-info">
+                    <h2 id="tickerSymbol"></h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="label">Model:</span>
+                            <span id="modelType"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Generated:</span>
+                            <span id="generatedAt"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Data Quality:</span>
+                            <span id="dataCompleteness"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Chart Ready:</span>
+                            <span id="chartCompatibility"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="performance-summary">
+                    <div class="score-card">
+                        <div class="score" id="overallScore"></div>
+                        <div class="score-label">Overall Score</div>
+                    </div>
+                    <div class="quality-badge" id="qualityBadge"></div>
+                </div>
+            </div>
+
+            <!-- Main Chart -->
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h3>Stock Price Prediction with Monte Carlo Analysis</h3>
+                    <div class="chart-controls">
+                        <label>
+                            <input type="checkbox" id="showPredictionBands" checked>
+                            Show Prediction Bands
+                        </label>
+                        <label>
+                            <input type="checkbox" id="showMonteCarloSims">
+                            Show Individual Simulations
+                        </label>
+                        <label>
+                            <input type="checkbox" id="showActualData" checked>
+                            Show Actual Data
+                        </label>
+                    </div>
+                </div>
+                <canvas id="ohlcChart" width="800" height="400"></canvas>
+            </div>
+
+            <!-- Metrics Grid -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h4>Open Price Accuracy</h4>
+                    <div class="metric-value" id="openMape"></div>
+                    <div class="metric-detail">
+                        <span id="openAccuracy5"></span> (±5%) | <span id="openAccuracy10"></span> (±10%)
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h4>High Price Accuracy</h4>
+                    <div class="metric-value" id="highMape"></div>
+                    <div class="metric-detail">
+                        <span id="highAccuracy5"></span> (±5%) | <span id="highAccuracy10"></span> (±10%)
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h4>Low Price Accuracy</h4>
+                    <div class="metric-value" id="lowMape"></div>
+                    <div class="metric-detail">
+                        <span id="lowAccuracy5"></span> (±5%) | <span id="lowAccuracy10"></span> (±10%)
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h4>Close Price Accuracy</h4>
+                    <div class="metric-value" id="closeMape"></div>
+                    <div class="metric-detail">
+                        <span id="closeAccuracy5"></span> (±5%) | <span id="closeAccuracy10"></span> (±10%)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prediction Details -->
+            <div class="details-section">
+                <div class="detail-card">
+                    <h4>Prediction Parameters</h4>
+                    <div class="param-grid">
+                        <div class="param-item">
+                            <span class="param-label">Lookback Period:</span>
+                            <span id="lookbackDays"></span> days
+                        </div>
+                        <div class="param-item">
+                            <span class="param-label">Prediction Period:</span>
+                            <span id="predictionDays"></span> days
+                        </div>
+                        <div class="param-item">
+                            <span class="param-label">Monte Carlo Simulations:</span>
+                            <span id="mcSimulations"></span>
+                        </div>
+                        <div class="param-item">
+                            <span class="param-label">Prediction Start:</span>
+                            <span id="predictionStart"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <h4>Price Analysis</h4>
+                    <div class="param-grid">
+                        <div class="param-item">
+                            <span class="param-label">Last Close:</span>
+                            $<span id="lastClose"></span>
+                        </div>
+                        <div class="param-item">
+                            <span class="param-label">Price Range:</span>
+                            $<span id="priceMin"></span> - $<span id="priceMax"></span>
+                        </div>
+                        <div class="param-item">
+                            <span class="param-label">Support Level:</span>
+                            $<span id="supportLevel"></span>
+                        </div>
+                        <div class="param-item">
+                            <span class="param-label">Resistance Level:</span>
+                            $<span id="resistanceLevel"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
