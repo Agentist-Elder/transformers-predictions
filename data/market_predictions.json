@@ -1,0 +1,63 @@
+{
+  "overall_direction": "BULLISH",
+  "overall_accuracy": 87.2,
+  "total_predictions": 10823,
+  "last_updated": "2025-09-28T17:30:00Z",
+  "top_predictions": [
+    {
+      "ticker": "AAPL",
+      "direction": "BULLISH",
+      "expected_change": 3.2,
+      "confidence": 89.5,
+      "target_price": 185.50,
+      "current_price": 179.20
+    },
+    {
+      "ticker": "TSLA",
+      "direction": "BEARISH",
+      "expected_change": -2.8,
+      "confidence": 82.1,
+      "target_price": 245.30,
+      "current_price": 252.40
+    },
+    {
+      "ticker": "MSFT",
+      "direction": "BULLISH",
+      "expected_change": 1.9,
+      "confidence": 91.3,
+      "target_price": 425.80,
+      "current_price": 417.90
+    },
+    {
+      "ticker": "GOOGL",
+      "direction": "NEUTRAL",
+      "expected_change": 0.4,
+      "confidence": 76.8,
+      "target_price": 142.60,
+      "current_price": 142.10
+    },
+    {
+      "ticker": "NVDA",
+      "direction": "BULLISH",
+      "expected_change": 4.7,
+      "confidence": 85.9,
+      "target_price": 118.20,
+      "current_price": 112.90
+    },
+    {
+      "ticker": "META",
+      "direction": "BEARISH",
+      "expected_change": -1.6,
+      "confidence": 79.4,
+      "target_price": 485.30,
+      "current_price": 493.20
+    }
+  ],
+  "market_summary": {
+    "bullish_count": 3982,
+    "bearish_count": 2619,
+    "neutral_count": 25,
+    "avg_confidence": 84.7,
+    "high_confidence_count": 112
+  }
+}

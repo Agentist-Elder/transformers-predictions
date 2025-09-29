@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transformers Predictions</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <title>🤖 Transformers Predictions</title>
+    <meta name="description" content="AI-powered stock predictions using transformer models">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>🤖 Transformers Predictions</h1>
+            <p style="text-align: center; color: #888; margin: -10px 0 20px 0; font-style: italic;">
+                Future Price Guesstimates Based off of a wholly unvetted AI Model
+            </p>
             <div class="search-container">
-                <input type="text" id="tickerSearch" placeholder="Enter ticker symbol (e.g., AAPL)" maxlength="10">
+                <input type="text" id="tickerSearch" placeholder="Enter any ticker symbol (e.g., A, AAPL, SPY, MSFT)" maxlength="10" style="width: 100%; max-width: 400px;">
             </div>
         </header>
 
@@ -26,185 +31,94 @@
 
         <div id="summaryContent" class="summary-content">
             <div class="summary-header">
-                <h2>🤖 Transformers Predictions - Dataset Overview</h2>
-                <p class="summary-subtitle">Comprehensive analysis of AI-powered stock prediction performance across the complete market</p>
+                <h2>Market Prediction Overview</h2>
+                <p class="summary-subtitle">AI predictions across available tickers</p>
             </div>
 
+            <!-- Dynamic Overview Cards -->
             <div class="overview-cards">
                 <div class="overview-card">
                     <div class="card-header">
                         <div class="card-icon">📊</div>
-                        <i class="info-icon" data-metric="total-tickers">ℹ️</i>
                     </div>
                     <div class="card-content">
-                        <div class="card-number" id="totalTickers">5,541</div>
-                        <div class="card-label">Stock Tickers</div>
+                        <div class="card-number" id="totalPredictions">10,823</div>
+                        <div class="card-label">Total Predictions</div>
                     </div>
                 </div>
                 <div class="overview-card">
                     <div class="card-header">
-                        <div class="card-icon">🎯</div>
-                        <i class="info-icon" data-metric="mean-score">ℹ️</i>
+                        <div class="card-icon">📈</div>
                     </div>
                     <div class="card-content">
-                        <div class="card-number" id="meanScore">86.8</div>
-                        <div class="card-label">Mean Accuracy Score</div>
+                        <div class="card-number" id="avgMovement">3.7%</div>
+                        <div class="card-label">Avg Expected Move</div>
                     </div>
                 </div>
                 <div class="overview-card">
                     <div class="card-header">
-                        <div class="card-icon">⚡</div>
-                        <i class="info-icon" data-metric="excellent-quality">ℹ️</i>
+                        <div class="card-icon">⬆️</div>
                     </div>
                     <div class="card-content">
-                        <div class="card-number" id="excellentPct">76%</div>
-                        <div class="card-label">Excellent Quality</div>
+                        <div class="card-number" id="bullishCount">3,982</div>
+                        <div class="card-label">Bullish</div>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="card-header">
+                        <div class="card-icon">⬇️</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number" id="bearishCount">2,619</div>
+                        <div class="card-label">Bearish</div>
                     </div>
                 </div>
                 <div class="overview-card">
                     <div class="card-header">
                         <div class="card-icon">🔍</div>
-                        <i class="info-icon" data-metric="lookback-period">ℹ️</i>
                     </div>
                     <div class="card-content">
-                        <div class="card-number">50</div>
-                        <div class="card-label">Days Lookback</div>
+                        <div class="card-number">120</div>
+                        <div class="card-label">Days History</div>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">5</div>
+                        <div class="card-label">Days Forecast</div>
                     </div>
                 </div>
             </div>
 
-            <div class="accuracy-summary">
-                <h3>🎯 OHLCV Prediction Accuracy</h3>
-                <div class="accuracy-grid">
-                    <div class="accuracy-card">
-                        <div class="card-header">
-                            <h4>Open Price</h4>
-                            <i class="info-icon" data-metric="open-price">ℹ️</i>
-                        </div>
-                        <div class="accuracy-stats">
-                            <div class="stat-item">
-                                <span class="stat-label">MAPE:</span>
-                                <span class="stat-value" id="openMAPE">2.51%</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">±5% Accuracy:</span>
-                                <span class="stat-value" id="openAcc5">87.2%</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">±10% Accuracy:</span>
-                                <span class="stat-value" id="openAcc10">95.9%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accuracy-card">
-                        <div class="card-header">
-                            <h4>High Price</h4>
-                            <i class="info-icon" data-metric="high-price">ℹ️</i>
-                        </div>
-                        <div class="accuracy-stats">
-                            <div class="stat-item">
-                                <span class="stat-label">MAPE:</span>
-                                <span class="stat-value" id="highMAPE">3.44%</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">±5% Accuracy:</span>
-                                <span class="stat-value" id="highAcc5">79.8%</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">±10% Accuracy:</span>
-                                <span class="stat-value" id="highAcc10">93.5%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accuracy-card">
-                        <div class="card-header">
-                            <h4>Low Price</h4>
-                            <i class="info-icon" data-metric="low-price">ℹ️</i>
-                        </div>
-                        <div class="accuracy-stats">
-                            <div class="stat-item">
-                                <span class="stat-label">MAPE:</span>
-                                <span class="stat-value" id="lowMAPE">3.42%</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">±5% Accuracy:</span>
-                                <span class="stat-value" id="lowAcc5">80.5%</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">±10% Accuracy:</span>
-                                <span class="stat-value" id="lowAcc10">93.7%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accuracy-card">
-                        <div class="card-header">
-                            <h4>Close Price</h4>
-                            <i class="info-icon" data-metric="close-price">ℹ️</i>
-                        </div>
-                        <div class="accuracy-stats">
-                            <div class="stat-item">
-                                <span class="stat-label">MAPE:</span>
-                                <span class="stat-value" id="closeMAPE">3.04%</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">±5% Accuracy:</span>
-                                <span class="stat-value" id="closeAcc5">83.4%</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-label">±10% Accuracy:</span>
-                                <span class="stat-value" id="closeAcc10">94.6%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <!-- Model Information -->
             <div class="performance-insights">
                 <div class="insight-card">
-                    <h3>📈 Performance Distribution</h3>
-                    <div class="distribution-stats">
-                        <div class="dist-item">
-                            <span class="dist-label">Excellent (4,208 tickers):</span>
-                            <span class="dist-value">75.9%</span>
-                        </div>
-                        <div class="dist-item">
-                            <span class="dist-label">Good (473 tickers):</span>
-                            <span class="dist-value">8.5%</span>
-                        </div>
-                        <div class="dist-item">
-                            <span class="dist-label">Fair (596 tickers):</span>
-                            <span class="dist-value">10.8%</span>
-                        </div>
-                        <div class="dist-item">
-                            <span class="dist-label">Poor (224 tickers):</span>
-                            <span class="dist-value">4.0%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="insight-card">
-                    <h3>🔬 Model Characteristics</h3>
+                    <h3>🔬 Model Configuration</h3>
                     <div class="model-stats">
                         <div class="model-item">
                             <span class="model-label">Model Type:</span>
                             <span class="model-value">Complete OHLCV Monte Carlo</span>
                         </div>
                         <div class="model-item">
+                            <span class="model-label">Historical Context:</span>
+                            <span class="model-value">120 Days Lookback</span>
+                        </div>
+                        <div class="model-item">
                             <span class="model-label">Prediction Horizon:</span>
                             <span class="model-value">5 Trading Days</span>
                         </div>
                         <div class="model-item">
-                            <span class="model-label">Historical Context:</span>
-                            <span class="model-value">50 Days Lookback</span>
-                        </div>
-                        <div class="model-item">
                             <span class="model-label">Monte Carlo Simulations:</span>
-                            <span class="model-value">10 Paths per Ticker</span>
+                            <span class="model-value">Multiple Paths per Ticker</span>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Top Predictions (Dynamic) -->
             <div class="search-prompt">
                 <p>💡 <strong>Start exploring:</strong> Type any ticker symbol above to view detailed predictions and analysis</p>
                 <div class="popular-tickers">
@@ -214,6 +128,42 @@
                     <span class="ticker-tag" onclick="searchTicker('GOOGL')">GOOGL</span>
                     <span class="ticker-tag" onclick="searchTicker('NVDA')">NVDA</span>
                     <span class="ticker-tag" onclick="searchTicker('META')">META</span>
+                </div>
+
+                <div class="prediction-summary" id="predictionSummary">
+                    <h4>📊 Sample Predictions</h4>
+                    <div class="predictions-grid" id="predictionsGrid">
+                        <div class="prediction-item bullish" onclick="searchTicker('AAPL')">
+                            <div class="pred-ticker">AAPL</div>
+                            <div class="pred-direction">↗ +3.2%</div>
+                            <div class="pred-confidence">89.5%</div>
+                        </div>
+                        <div class="prediction-item bearish" onclick="searchTicker('TSLA')">
+                            <div class="pred-ticker">TSLA</div>
+                            <div class="pred-direction">↘ -2.8%</div>
+                            <div class="pred-confidence">82.1%</div>
+                        </div>
+                        <div class="prediction-item bullish" onclick="searchTicker('MSFT')">
+                            <div class="pred-ticker">MSFT</div>
+                            <div class="pred-direction">↗ +1.9%</div>
+                            <div class="pred-confidence">91.3%</div>
+                        </div>
+                        <div class="prediction-item neutral" onclick="searchTicker('GOOGL')">
+                            <div class="pred-ticker">GOOGL</div>
+                            <div class="pred-direction">→ +0.4%</div>
+                            <div class="pred-confidence">76.8%</div>
+                        </div>
+                        <div class="prediction-item bullish" onclick="searchTicker('NVDA')">
+                            <div class="pred-ticker">NVDA</div>
+                            <div class="pred-direction">↗ +4.7%</div>
+                            <div class="pred-confidence">85.9%</div>
+                        </div>
+                        <div class="prediction-item bearish" onclick="searchTicker('META')">
+                            <div class="pred-ticker">META</div>
+                            <div class="pred-direction">↘ -1.6%</div>
+                            <div class="pred-confidence">79.4%</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -246,127 +196,79 @@
                 <div class="performance-summary">
                     <div class="score-card">
                         <div class="score" id="overallScore"></div>
-                        <div class="score-label">Overall Score</div>
+                        <div class="score-label">
+                            Overall Score
+                            <i class="info-icon" data-metric="overall-score">ℹ️</i>
+                        </div>
                     </div>
-                    <div class="quality-badge" id="qualityBadge"></div>
                 </div>
             </div>
 
-            <!-- Main Chart -->
+            <!-- OHLCV Chart -->
             <div class="chart-container">
                 <div class="chart-header">
-                    <h3>Stock Price Prediction with Monte Carlo Analysis</h3>
+                    <h3>📈 5-Day OHLCV Predictions with Monte Carlo Simulations</h3>
                     <div class="chart-controls">
                         <label>
                             <input type="checkbox" id="showPredictionBands" checked>
-                            Show Prediction Bands
+                            Predictions
                         </label>
                         <label>
-                            <input type="checkbox" id="showMonteCarloSims">
-                            Show Individual Simulations
+                            <input type="checkbox" id="showConfidence90">
+                            90% Confidence
+                        </label>
+                        <label>
+                            <input type="checkbox" id="showConfidence75">
+                            75% Confidence
+                        </label>
+                        <label>
+                            <input type="checkbox" id="showConfidence50" checked>
+                            50% Confidence
+                        </label>
+                        <label>
+                            <input type="checkbox" id="showMonteCarloLines" checked>
+                            Monte Carlo Paths
                         </label>
                         <label>
                             <input type="checkbox" id="showActualData" checked>
-                            Show Actual Data
+                            Show Historical Data
                         </label>
+                        <button id="resetZoom" class="reset-zoom-btn" onclick="if(window.dashboard && window.dashboard.chart) window.dashboard.chart.resetZoom();">Reset Zoom</button>
+                        <span class="zoom-hint">🔍 Scroll to zoom • Drag to pan • Ctrl+Drag to box zoom</span>
                     </div>
                 </div>
                 <canvas id="ohlcChart" width="800" height="400"></canvas>
             </div>
 
-            <!-- Metrics Grid -->
+            <!-- Key Predictions Grid -->
             <div class="metrics-grid">
                 <div class="metric-card">
                     <div class="metric-header">
-                        <h4>Open Price Accuracy</h4>
-                        <i class="info-icon" data-metric="ticker-open-accuracy">ℹ️</i>
+                        <h4>5-Day Price Target</h4>
+                        <i class="info-icon" data-metric="price-target">ℹ️</i>
                     </div>
-                    <div class="metric-value" id="openMape"></div>
+                    <div class="metric-value" id="priceTarget">$--</div>
                     <div class="metric-detail">
-                        <span id="openAccuracy5"></span> (±5%) | <span id="openAccuracy10"></span> (±10%)
+                        <span id="priceTargetChange" class="change-indicator">--</span>
                     </div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-header">
-                        <h4>High Price Accuracy</h4>
-                        <i class="info-icon" data-metric="ticker-high-accuracy">ℹ️</i>
+                        <h4>Market Direction</h4>
+                        <i class="info-icon" data-metric="market-direction">ℹ️</i>
                     </div>
-                    <div class="metric-value" id="highMape"></div>
-                    <div class="metric-detail">
-                        <span id="highAccuracy5"></span> (±5%) | <span id="highAccuracy10"></span> (±10%)
-                    </div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-header">
-                        <h4>Low Price Accuracy</h4>
-                        <i class="info-icon" data-metric="ticker-low-accuracy">ℹ️</i>
-                    </div>
-                    <div class="metric-value" id="lowMape"></div>
-                    <div class="metric-detail">
-                        <span id="lowAccuracy5"></span> (±5%) | <span id="lowAccuracy10"></span> (±10%)
+                    <div class="metric-value" id="marketDirection">
+                        <span class="direction-arrow">➡️</span> <span id="directionText">--</span>
                     </div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-header">
-                        <h4>Close Price Accuracy</h4>
-                        <i class="info-icon" data-metric="ticker-close-accuracy">ℹ️</i>
+                        <h4>Risk Level</h4>
+                        <i class="info-icon" data-metric="risk-level">ℹ️</i>
                     </div>
-                    <div class="metric-value" id="closeMape"></div>
+                    <div class="metric-value" id="riskLevel">--</div>
                     <div class="metric-detail">
-                        <span id="closeAccuracy5"></span> (±5%) | <span id="closeAccuracy10"></span> (±10%)
-                    </div>
-                </div>
-            </div>
-
-            <!-- Prediction Details -->
-            <div class="details-section">
-                <div class="detail-card">
-                    <div class="detail-header">
-                        <h4>Prediction Parameters</h4>
-                        <i class="info-icon" data-metric="prediction-parameters">ℹ️</i>
-                    </div>
-                    <div class="param-grid">
-                        <div class="param-item">
-                            <span class="param-label">Lookback Period:</span>
-                            <span id="lookbackDays"></span> days
-                        </div>
-                        <div class="param-item">
-                            <span class="param-label">Prediction Period:</span>
-                            <span id="predictionDays"></span> days
-                        </div>
-                        <div class="param-item">
-                            <span class="param-label">Monte Carlo Simulations:</span>
-                            <span id="mcSimulations"></span>
-                        </div>
-                        <div class="param-item">
-                            <span class="param-label">Prediction Start:</span>
-                            <span id="predictionStart"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="detail-card">
-                    <div class="detail-header">
-                        <h4>Price Analysis</h4>
-                        <i class="info-icon" data-metric="price-analysis">ℹ️</i>
-                    </div>
-                    <div class="param-grid">
-                        <div class="param-item">
-                            <span class="param-label">Last Close:</span>
-                            $<span id="lastClose"></span>
-                        </div>
-                        <div class="param-item">
-                            <span class="param-label">Price Range:</span>
-                            $<span id="priceMin"></span> - $<span id="priceMax"></span>
-                        </div>
-                        <div class="param-item">
-                            <span class="param-label">Support Level:</span>
-                            $<span id="supportLevel"></span>
-                        </div>
-                        <div class="param-item">
-                            <span class="param-label">Resistance Level:</span>
-                            <span id="resistanceLevel"></span>
-                        </div>
+                        <span id="volatilityValue">--</span> volatility
                     </div>
                 </div>
             </div>
@@ -396,6 +298,12 @@
         </div>
     </div>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
