@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "GHI",
-    "last_update": "2025-10-04T04:34:03.443533",
+    "last_update": "2025-10-04T11:57:30.153139",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

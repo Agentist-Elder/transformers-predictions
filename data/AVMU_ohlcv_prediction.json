@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AVMU",
-    "last_update": "2025-10-04T04:33:50.503271",
+    "last_update": "2025-10-04T11:57:17.485511",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

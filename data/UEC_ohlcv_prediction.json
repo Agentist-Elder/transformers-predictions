@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "UEC",
-    "last_update": "2025-10-04T04:34:09.763086",
+    "last_update": "2025-10-04T11:57:36.377103",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

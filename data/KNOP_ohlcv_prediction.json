@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "KNOP",
-    "last_update": "2025-10-04T04:33:52.157544",
+    "last_update": "2025-10-04T11:57:19.065203",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

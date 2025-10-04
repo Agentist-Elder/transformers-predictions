@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AETH",
-    "last_update": "2025-10-04T04:33:53.826708",
+    "last_update": "2025-10-04T11:57:20.723038",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

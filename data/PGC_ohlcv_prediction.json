@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PGC",
-    "last_update": "2025-10-04T04:25:22.046356",
+    "last_update": "2025-10-04T11:48:50.210166",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

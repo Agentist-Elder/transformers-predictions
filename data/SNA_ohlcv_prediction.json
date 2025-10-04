@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SNA",
-    "last_update": "2025-10-04T04:25:20.878588",
+    "last_update": "2025-10-04T11:48:49.083170",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

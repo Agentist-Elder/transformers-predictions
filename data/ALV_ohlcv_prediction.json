@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ALV",
-    "last_update": "2025-10-04T04:25:21.873220",
+    "last_update": "2025-10-04T11:48:50.039052",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "USAI",
-    "last_update": "2025-10-04T04:25:37.553672",
+    "last_update": "2025-10-04T11:49:05.559315",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

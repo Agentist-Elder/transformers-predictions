@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "GUNR",
-    "last_update": "2025-10-04T04:25:26.484163",
+    "last_update": "2025-10-04T11:48:54.617290",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

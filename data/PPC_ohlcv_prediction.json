@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PPC",
-    "last_update": "2025-10-04T04:25:33.396699",
+    "last_update": "2025-10-04T11:49:01.500347",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AIRG",
-    "last_update": "2025-10-04T04:25:21.028490",
+    "last_update": "2025-10-04T11:48:49.244446",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

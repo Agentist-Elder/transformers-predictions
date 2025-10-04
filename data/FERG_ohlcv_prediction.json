@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FERG",
-    "last_update": "2025-10-04T04:33:58.796199",
+    "last_update": "2025-10-04T11:57:25.583252",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

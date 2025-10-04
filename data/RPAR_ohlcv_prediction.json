@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "RPAR",
-    "last_update": "2025-10-04T04:34:10.865581",
+    "last_update": "2025-10-04T11:57:37.472190",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

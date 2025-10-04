@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VCIT",
-    "last_update": "2025-10-04T04:34:01.693283",
+    "last_update": "2025-10-04T11:57:28.443401",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

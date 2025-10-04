@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LEVI",
-    "last_update": "2025-10-04T04:25:37.425169",
+    "last_update": "2025-10-04T11:49:05.502151",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

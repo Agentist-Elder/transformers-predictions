@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TNDM",
-    "last_update": "2025-10-04T04:34:03.269548",
+    "last_update": "2025-10-04T11:57:30.026412",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

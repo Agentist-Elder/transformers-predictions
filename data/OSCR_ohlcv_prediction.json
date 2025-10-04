@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "OSCR",
-    "last_update": "2025-10-04T04:25:33.546802",
+    "last_update": "2025-10-04T11:49:01.649264",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

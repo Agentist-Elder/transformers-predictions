@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LMND",
-    "last_update": "2025-10-04T04:25:33.616683",
+    "last_update": "2025-10-04T11:49:01.719151",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ITP",
-    "last_update": "2025-10-04T04:34:04.908400",
+    "last_update": "2025-10-04T11:57:31.601669",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

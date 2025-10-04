@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "NHTC",
-    "last_update": "2025-10-04T04:25:17.890537",
+    "last_update": "2025-10-04T11:48:46.061366",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

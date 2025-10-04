@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MRVI",
-    "last_update": "2025-10-04T04:25:21.595243",
+    "last_update": "2025-10-04T11:48:49.705640",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

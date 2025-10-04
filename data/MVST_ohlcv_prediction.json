@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MVST",
-    "last_update": "2025-10-04T04:33:58.738442",
+    "last_update": "2025-10-04T11:57:25.549053",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FRSH",
-    "last_update": "2025-10-04T04:33:55.058601",
+    "last_update": "2025-10-04T11:57:21.931939",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

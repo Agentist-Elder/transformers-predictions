@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SHOT",
-    "last_update": "2025-10-04T04:34:01.517027",
+    "last_update": "2025-10-04T11:57:28.317499",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "REMX",
-    "last_update": "2025-10-04T04:25:31.120929",
+    "last_update": "2025-10-04T11:48:59.205271",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

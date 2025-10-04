@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ENFY",
-    "last_update": "2025-10-04T04:25:22.958599",
+    "last_update": "2025-10-04T11:48:51.131443",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

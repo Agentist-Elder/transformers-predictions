@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "DOX",
-    "last_update": "2025-10-04T04:34:02.841849",
+    "last_update": "2025-10-04T11:57:29.452248",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

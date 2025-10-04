@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TBBK",
-    "last_update": "2025-10-04T04:25:26.495702",
+    "last_update": "2025-10-04T11:48:54.594001",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SECT",
-    "last_update": "2025-10-04T04:25:35.901434",
+    "last_update": "2025-10-04T11:49:03.932850",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

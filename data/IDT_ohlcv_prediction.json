@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IDT",
-    "last_update": "2025-10-04T04:33:54.119165",
+    "last_update": "2025-10-04T11:57:21.012269",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

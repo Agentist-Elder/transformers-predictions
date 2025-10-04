@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MGIC",
-    "last_update": "2025-10-04T04:25:28.355233",
+    "last_update": "2025-10-04T11:48:56.463367",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

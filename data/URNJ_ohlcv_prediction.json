@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "URNJ",
-    "last_update": "2025-10-04T04:34:00.635368",
+    "last_update": "2025-10-04T11:57:27.391562",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

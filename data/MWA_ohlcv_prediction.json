@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MWA",
-    "last_update": "2025-10-04T04:33:51.842658",
+    "last_update": "2025-10-04T11:57:18.801921",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

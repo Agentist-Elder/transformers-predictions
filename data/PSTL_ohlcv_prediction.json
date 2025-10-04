@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PSTL",
-    "last_update": "2025-10-04T04:25:21.653775",
+    "last_update": "2025-10-04T11:48:49.834323",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

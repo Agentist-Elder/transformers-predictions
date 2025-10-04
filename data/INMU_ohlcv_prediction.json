@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "INMU",
-    "last_update": "2025-10-04T04:34:06.895995",
+    "last_update": "2025-10-04T11:57:33.584031",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "DSGN",
-    "last_update": "2025-10-04T04:34:06.930818",
+    "last_update": "2025-10-04T11:57:33.618473",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

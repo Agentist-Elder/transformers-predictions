@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SLX",
-    "last_update": "2025-10-04T04:25:38.255780",
+    "last_update": "2025-10-04T11:49:06.262483",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

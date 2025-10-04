@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SCHV",
-    "last_update": "2025-10-04T04:34:08.346408",
+    "last_update": "2025-10-04T11:57:35.013145",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

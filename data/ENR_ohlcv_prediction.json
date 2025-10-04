@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ENR",
-    "last_update": "2025-10-04T04:33:52.484412",
+    "last_update": "2025-10-04T11:57:19.389361",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "NRG",
-    "last_update": "2025-10-04T04:25:37.175981",
+    "last_update": "2025-10-04T11:49:05.159074",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

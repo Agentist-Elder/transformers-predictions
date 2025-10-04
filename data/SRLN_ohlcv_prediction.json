@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SRLN",
-    "last_update": "2025-10-04T04:25:25.353590",
+    "last_update": "2025-10-04T11:48:53.465952",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

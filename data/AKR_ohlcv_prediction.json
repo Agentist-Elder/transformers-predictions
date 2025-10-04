@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AKR",
-    "last_update": "2025-10-04T04:25:34.697599",
+    "last_update": "2025-10-04T11:49:02.762710",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

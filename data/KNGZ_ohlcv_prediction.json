@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "KNGZ",
-    "last_update": "2025-10-04T04:25:22.184558",
+    "last_update": "2025-10-04T11:48:50.403836",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

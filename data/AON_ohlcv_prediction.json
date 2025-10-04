@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AON",
-    "last_update": "2025-10-04T04:34:05.072684",
+    "last_update": "2025-10-04T11:57:31.819398",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

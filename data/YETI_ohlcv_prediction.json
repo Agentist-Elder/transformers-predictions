@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "YETI",
-    "last_update": "2025-10-04T04:25:36.422076",
+    "last_update": "2025-10-04T11:49:04.489339",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

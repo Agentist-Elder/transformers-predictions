@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PLX",
-    "last_update": "2025-10-04T04:34:04.257197",
+    "last_update": "2025-10-04T11:57:31.042480",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

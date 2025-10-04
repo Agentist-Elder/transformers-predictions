@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-04T11:36:31.091124",
+  "model": "Kronos GPU Model",
+  "total_tickers_requested": 5793,
+  "tickers_with_data": 5700,
+  "successful": 0,
+  "failed": 5571,
+  "success_rate": 0.0,
+  "lookback_period": "120 days ending 2025-10-03",
+  "prediction_period": "5 days forward",
+  "monte_carlo_runs": 10,
+  "final_batch_divisor": 1,
+  "processing_time_seconds": 39.54985213279724
+}

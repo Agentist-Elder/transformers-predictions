@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LFUS",
-    "last_update": "2025-10-04T04:33:57.586293",
+    "last_update": "2025-10-04T11:57:24.446514",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

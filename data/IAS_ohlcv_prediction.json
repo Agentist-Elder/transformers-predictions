@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IAS",
-    "last_update": "2025-10-04T04:34:04.396556",
+    "last_update": "2025-10-04T11:57:31.145378",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

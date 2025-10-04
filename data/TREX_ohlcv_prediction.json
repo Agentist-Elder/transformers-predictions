@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TREX",
-    "last_update": "2025-10-04T04:25:38.359365",
+    "last_update": "2025-10-04T11:49:06.342963",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

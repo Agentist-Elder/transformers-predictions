@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PRM",
-    "last_update": "2025-10-04T04:25:33.385223",
+    "last_update": "2025-10-04T11:49:01.488893",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

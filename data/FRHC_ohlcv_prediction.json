@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FRHC",
-    "last_update": "2025-10-04T04:33:56.400306",
+    "last_update": "2025-10-04T11:57:23.246502",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

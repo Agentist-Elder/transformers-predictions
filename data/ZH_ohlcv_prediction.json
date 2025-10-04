@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ZH",
-    "last_update": "2025-10-04T04:33:55.520605",
+    "last_update": "2025-10-04T11:57:22.346843",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

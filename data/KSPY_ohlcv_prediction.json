@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "KSPY",
-    "last_update": "2025-10-04T04:25:33.281525",
+    "last_update": "2025-10-04T11:49:01.408537",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

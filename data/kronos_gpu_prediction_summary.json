@@ -1,61 +1,10 @@
 {
-  "timestamp": "2025-10-04T04:45:00.000Z",
-  "model": "Kronos GPU Model (Transformer)",
-  "model_description": "Advanced transformer-based time series prediction model with GPU acceleration",
-  "total_tickers": 5453,
-  "successful": 5453,
+  "timestamp": "2025-10-04T12:06:08.163766",
+  "model": "Kronos GPU Model",
+  "total_tickers": 5700,
+  "successful": 5569,
   "failed": 0,
-  "coverage_percentage": 100.0,
-  "data_configuration": {
-    "lookback_period": "120 days ending 2025-10-03",
-    "prediction_period": "2025-10-06 to 2025-10-10",
-    "prediction_days": 5,
-    "monte_carlo_runs": 10,
-    "data_source": "finnhub-data",
-    "data_format": "parquet"
-  },
-  "model_configuration": {
-    "architecture": "Transformer",
-    "device": "CUDA GPU",
-    "batch_processing": "Adaptive (1900 tickers per batch)",
-    "memory_optimization": "Automatic OOM handling with batch splitting",
-    "context_window": 512,
-    "tokenizer": "KronosTokenizer"
-  },
-  "performance_metrics": {
-    "average_processing_time_per_ticker": "0.39 seconds",
-    "total_processing_time": "35 minutes",
-    "gpu_memory_usage": "15.4 GB",
-    "batch_optimization": "3 batches of 1900 tickers",
-    "monte_carlo_iteration_time": "7.7 seconds per iteration"
-  },
-  "prediction_statistics": {
-    "bullish_predictions": 2145,
-    "bearish_predictions": 1876,
-    "neutral_predictions": 1432,
-    "average_confidence": 82.5,
-    "confidence_range": {
-      "min": 50,
-      "max": 95
-    }
-  },
-  "output_format": {
-    "file_pattern": "{ticker}_ohlcv_prediction.json",
-    "includes_historical": true,
-    "includes_predictions": true,
-    "includes_monte_carlo_paths": true,
-    "includes_confidence_bands": true
-  },
-  "quality_metrics": {
-    "data_completeness": 100.0,
-    "model_convergence": true,
-    "validation_passed": true,
-    "chart_ready": true
-  },
-  "deployment_info": {
-    "environment": "Production",
-    "version": "2.0.0",
-    "last_update": "2025-10-04T04:45:00.000Z",
-    "next_scheduled_update": "2025-10-05T04:00:00.000Z"
-  }
+  "lookback_period": "120 days ending 2025-10-03",
+  "prediction_period": "2025-10-06 to 2025-10-10",
+  "monte_carlo_runs": 10
 }

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CRVS",
-    "last_update": "2025-10-04T04:25:36.017015",
+    "last_update": "2025-10-04T11:49:04.070840",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

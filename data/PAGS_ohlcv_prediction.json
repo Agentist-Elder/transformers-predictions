@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PAGS",
-    "last_update": "2025-10-04T04:25:37.106360",
+    "last_update": "2025-10-04T11:49:05.136088",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

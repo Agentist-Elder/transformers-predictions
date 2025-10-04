@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SPVM",
-    "last_update": "2025-10-04T04:25:18.913303",
+    "last_update": "2025-10-04T11:48:47.137438",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

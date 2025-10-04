@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IHS",
-    "last_update": "2025-10-04T04:25:33.783268",
+    "last_update": "2025-10-04T11:49:01.845391",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

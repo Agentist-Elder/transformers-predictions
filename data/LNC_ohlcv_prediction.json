@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LNC",
-    "last_update": "2025-10-04T04:34:05.561291",
+    "last_update": "2025-10-04T11:57:32.368796",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

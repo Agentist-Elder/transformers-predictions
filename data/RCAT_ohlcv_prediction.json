@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "RCAT",
-    "last_update": "2025-10-04T04:25:30.026596",
+    "last_update": "2025-10-04T11:48:58.156290",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

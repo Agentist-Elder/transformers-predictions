@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VEGI",
-    "last_update": "2025-10-04T04:25:20.774656",
+    "last_update": "2025-10-04T11:48:48.944890",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

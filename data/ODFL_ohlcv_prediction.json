@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ODFL",
-    "last_update": "2025-10-04T04:34:08.056701",
+    "last_update": "2025-10-04T11:57:34.753137",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

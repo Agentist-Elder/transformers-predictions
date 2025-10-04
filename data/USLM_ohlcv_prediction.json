@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "USLM",
-    "last_update": "2025-10-04T04:25:23.155121",
+    "last_update": "2025-10-04T11:48:51.278364",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

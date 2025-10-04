@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HPP",
-    "last_update": "2025-10-04T04:34:05.795564",
+    "last_update": "2025-10-04T11:57:32.471640",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

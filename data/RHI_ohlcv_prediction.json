@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "RHI",
-    "last_update": "2025-10-04T04:25:29.071484",
+    "last_update": "2025-10-04T11:48:57.186516",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SNN",
-    "last_update": "2025-10-04T04:25:24.135975",
+    "last_update": "2025-10-04T11:48:52.304179",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

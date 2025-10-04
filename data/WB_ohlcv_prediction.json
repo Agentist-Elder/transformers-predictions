@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "WB",
-    "last_update": "2025-10-04T04:33:51.577822",
+    "last_update": "2025-10-04T11:57:18.501485",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

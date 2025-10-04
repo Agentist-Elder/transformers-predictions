@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "NIO",
-    "last_update": "2025-10-04T04:25:25.447123",
+    "last_update": "2025-10-04T11:48:53.568372",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

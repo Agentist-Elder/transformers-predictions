@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BSX",
-    "last_update": "2025-10-04T04:33:56.856520",
+    "last_update": "2025-10-04T11:57:23.742623",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "APO",
-    "last_update": "2025-10-04T04:25:18.369521",
+    "last_update": "2025-10-04T11:48:46.574960",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

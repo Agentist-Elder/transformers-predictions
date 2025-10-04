@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BL",
-    "last_update": "2025-10-04T04:25:25.575776",
+    "last_update": "2025-10-04T11:48:53.660690",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

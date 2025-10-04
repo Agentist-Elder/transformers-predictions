@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VFMO",
-    "last_update": "2025-10-04T04:25:33.269873",
+    "last_update": "2025-10-04T11:49:01.351377",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

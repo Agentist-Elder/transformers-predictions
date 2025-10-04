@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BHB",
-    "last_update": "2025-10-04T04:25:22.900928",
+    "last_update": "2025-10-04T11:48:51.074168",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,
