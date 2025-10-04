@@ -1,0 +1,127 @@
+{
+  "ticker_info": {
+    "symbol": "AAPL",
+    "model_type": "Complete OHLCV Monte Carlo",
+    "generated_at": "2025-09-28T17:30:00Z",
+    "data_completeness": "100%",
+    "chart_compatibility": "candlestick_ready"
+  },
+  "summary_stats": {
+    "overall_score": 92.3,
+    "prediction_quality": "excellent"
+  },
+  "data": {
+    "metadata": {
+      "lookback_days": 50,
+      "prediction_days": 5,
+      "prediction_start": "2025-09-29"
+    },
+    "historical_ohlcv": {
+      "dates": ["2025-09-23", "2025-09-24", "2025-09-25", "2025-09-26", "2025-09-27"],
+      "open_prices": [175.20, 177.50, 179.10, 178.80, 179.20],
+      "high_prices": [178.90, 180.20, 181.50, 180.40, 181.10],
+      "low_prices": [174.80, 176.90, 178.20, 177.60, 178.50],
+      "close_prices": [177.30, 179.80, 180.40, 179.20, 179.80],
+      "volumes": [45234567, 52341789, 48567123, 43987654, 46123789],
+      "summary": {
+        "price_range": {
+          "min": 174.80,
+          "max": 181.50,
+          "last_close": 179.80
+        }
+      }
+    },
+    "predicted_ohlcv": {
+      "dates": ["2025-09-30", "2025-10-01", "2025-10-02", "2025-10-03", "2025-10-04"],
+      "open_predictions": [180.10, 182.30, 183.50, 184.20, 185.00],
+      "high_predictions": [182.80, 184.70, 185.90, 186.50, 187.20],
+      "low_predictions": [179.50, 181.80, 182.90, 183.40, 184.10],
+      "close_predictions": [182.20, 184.10, 185.30, 186.00, 185.50],
+      "volume_predictions": [48000000, 46500000, 45200000, 47800000, 49100000],
+      "monte_carlo_simulations": []
+    },
+    "prediction_metrics": {
+      "open_metrics": {
+        "mape": 2.1,
+        "accuracy_5pct": 91,
+        "accuracy_10pct": 97
+      },
+      "high_metrics": {
+        "mape": 2.8,
+        "accuracy_5pct": 86,
+        "accuracy_10pct": 95
+      },
+      "low_metrics": {
+        "mape": 2.7,
+        "accuracy_5pct": 87,
+        "accuracy_10pct": 96
+      },
+      "close_metrics": {
+        "mape": 2.3,
+        "accuracy_5pct": 89,
+        "accuracy_10pct": 96
+      }
+    },
+    "ohlcv_analysis": {
+      "price_levels": {
+        "support_level": 177.50,
+        "resistance_level": 186.00
+      }
+    }
+  },
+  "chart_data": {
+    "historical_candlesticks": [
+      {
+        "date": "2025-09-23",
+        "open": 175.20,
+        "high": 178.90,
+        "low": 174.80,
+        "close": 177.30,
+        "volume": 45234567
+      },
+      {
+        "date": "2025-09-24",
+        "open": 177.50,
+        "high": 180.20,
+        "low": 176.90,
+        "close": 179.80,
+        "volume": 52341789
+      },
+      {
+        "date": "2025-09-25",
+        "open": 179.10,
+        "high": 181.50,
+        "low": 178.20,
+        "close": 180.40,
+        "volume": 48567123
+      },
+      {
+        "date": "2025-09-26",
+        "open": 178.80,
+        "high": 180.40,
+        "low": 177.60,
+        "close": 179.20,
+        "volume": 43987654
+      },
+      {
+        "date": "2025-09-27",
+        "open": 179.20,
+        "high": 181.10,
+        "low": 178.50,
+        "close": 179.80,
+        "volume": 46123789
+      }
+    ],
+    "predicted_ohlcv_summary": {
+      "close": [
+        {"mean": 182.20, "p10": 180.50, "p25": 181.30, "p75": 183.10, "p90": 184.20},
+        {"mean": 184.10, "p10": 182.20, "p25": 183.10, "p75": 185.00, "p90": 186.30},
+        {"mean": 185.30, "p10": 183.30, "p25": 184.20, "p75": 186.40, "p90": 187.80},
+        {"mean": 186.00, "p10": 184.00, "p25": 184.90, "p75": 187.10, "p90": 188.50},
+        {"mean": 185.50, "p10": 183.40, "p25": 184.40, "p75": 186.60, "p90": 188.00}
+      ]
+    },
+    "monte_carlo_simulations": [],
+    "actual_candlesticks": []
+  }
+}

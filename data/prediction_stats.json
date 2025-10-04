@@ -1,0 +1,14 @@
+{
+  "total_predictions": 10823,
+  "analyzed_sample": 500,
+  "valid_predictions_in_sample": 500,
+  "estimated_bullish": 3874,
+  "estimated_bearish": 2727,
+  "estimated_neutral": 4220,
+  "avg_expected_movement_pct": 4.65,
+  "median_movement_pct": 1.52,
+  "max_gain_pct": 223.54,
+  "max_loss_pct": -90.21,
+  "timestamp": "2025-10-04T03:27:37.533495",
+  "failed_files": 0
+}

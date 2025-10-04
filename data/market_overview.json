@@ -1,0 +1,215 @@
+{
+  "total_tickers": 5798,
+  "bullish_count": 2217,
+  "bearish_count": 1885,
+  "neutral_count": 1696,
+  "top_gainers": [
+    {
+      "ticker": "APLM",
+      "change_percent": 193.98883572567783,
+      "price": 18.4331
+    },
+    {
+      "ticker": "APLT",
+      "change_percent": 160.61370323665406,
+      "price": 1.24
+    },
+    {
+      "ticker": "OPI",
+      "change_percent": 144.04603806994248,
+      "price": 0.5513
+    },
+    {
+      "ticker": "ASST",
+      "change_percent": 87.00440528634361,
+      "price": 8.49
+    },
+    {
+      "ticker": "WOLF",
+      "change_percent": 86.4,
+      "price": 2.33
+    },
+    {
+      "ticker": "TRML",
+      "change_percent": 78.0478683620045,
+      "price": 47.61
+    },
+    {
+      "ticker": "VMEO",
+      "change_percent": 74.2663656884876,
+      "price": 7.72
+    },
+    {
+      "ticker": "BITF",
+      "change_percent": 72.86821705426357,
+      "price": 2.23
+    },
+    {
+      "ticker": "TLPH",
+      "change_percent": 71.15804806991987,
+      "price": 0.94
+    },
+    {
+      "ticker": "ALCYW",
+      "change_percent": 69.89999999999998,
+      "price": 0.1699
+    }
+  ],
+  "top_losers": [
+    {
+      "ticker": "AMBI-WS",
+      "change_percent": -71.70042971147943,
+      "price": 0.0461
+    },
+    {
+      "ticker": "AIEV",
+      "change_percent": -71.31538582315784,
+      "price": 0.0475
+    },
+    {
+      "ticker": "AMBI",
+      "change_percent": -70.76566125290023,
+      "price": 1.26
+    },
+    {
+      "ticker": "ABPWW",
+      "change_percent": -50.30358030293209,
+      "price": 0.023
+    },
+    {
+      "ticker": "NFE",
+      "change_percent": -46.53061224489796,
+      "price": 1.31
+    },
+    {
+      "ticker": "AGRI",
+      "change_percent": -38.568935427574175,
+      "price": 3.52
+    },
+    {
+      "ticker": "NEXT",
+      "change_percent": -36.014967259120674,
+      "price": 6.84
+    },
+    {
+      "ticker": "TONX",
+      "change_percent": -32.399626517273575,
+      "price": 7.24
+    },
+    {
+      "ticker": "NAKA",
+      "change_percent": -31.86274509803922,
+      "price": 2.78
+    },
+    {
+      "ticker": "AMODW",
+      "change_percent": -31.717171717171727,
+      "price": 0.0676
+    }
+  ],
+  "highest_volume": [
+    {
+      "ticker": "OPEN",
+      "volume": 524018382,
+      "price": 9.07
+    },
+    {
+      "ticker": "NVDA",
+      "volume": 164785409.2,
+      "price": 177.8
+    },
+    {
+      "ticker": "TSLL",
+      "volume": 152129759.2,
+      "price": 17.02
+    },
+    {
+      "ticker": "WBD",
+      "volume": 149599785,
+      "price": 18.9
+    },
+    {
+      "ticker": "SOXS",
+      "volume": 126545839.6,
+      "price": 6.32
+    },
+    {
+      "ticker": "WBA",
+      "volume": 120146232.8,
+      "price": 11.98
+    },
+    {
+      "ticker": "OCEA",
+      "volume": 111755699.2,
+      "price": 0.0205
+    },
+    {
+      "ticker": "NIO",
+      "volume": 108845926.4,
+      "price": 6.22
+    },
+    {
+      "ticker": "SYRS",
+      "volume": 103267199,
+      "price": 0.1172
+    },
+    {
+      "ticker": "TSLZ",
+      "volume": 97913277.4,
+      "price": 0.9301
+    }
+  ],
+  "most_volatile": [
+    {
+      "ticker": "ABVX",
+      "volatility": 53.796149000553925,
+      "price": 82.84
+    },
+    {
+      "ticker": "OPI",
+      "volatility": 42.97256660144566,
+      "price": 0.5513
+    },
+    {
+      "ticker": "NAKA",
+      "volatility": 40.89038954695789,
+      "price": 2.78
+    },
+    {
+      "ticker": "AGMH",
+      "volatility": 39.233163510564815,
+      "price": 8.66
+    },
+    {
+      "ticker": "ABLVW",
+      "volatility": 36.362543051491855,
+      "price": 0.0202
+    },
+    {
+      "ticker": "ABVE",
+      "volatility": 36.057552862220916,
+      "price": 1.63
+    },
+    {
+      "ticker": "AIRE",
+      "volatility": 34.18506251517024,
+      "price": 0.8475
+    },
+    {
+      "ticker": "ABVEW",
+      "volatility": 33.44277385841,
+      "price": 0.2648
+    },
+    {
+      "ticker": "AERTW",
+      "volatility": 29.726987756913942,
+      "price": 0.04
+    },
+    {
+      "ticker": "OPEN",
+      "volatility": 28.471580055718213,
+      "price": 9.07
+    }
+  ],
+  "last_updated": "2025-09-28T17:39:53.989941"
+}

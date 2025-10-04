@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 Transformers Predictions</title>
+    <meta name="description" content="AI-powered stock predictions using transformer models">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Transformers Predictions</h1>
+            <p style="text-align: center; color: #888; margin: -10px 0 20px 0; font-style: italic;">
+                Future Price Guesstimates Based off of a wholly unvetted AI Model
+            </p>
+            <div class="search-container">
+                <input type="text" id="tickerSearch" placeholder="Enter any ticker symbol (e.g., A, AAPL, SPY, MSFT)" maxlength="10" style="width: 100%; max-width: 400px;">
+            </div>
+        </header>
+
+        <div id="loadingIndicator" class="loading hidden">
+            <div class="spinner"></div>
+            <span>Loading ticker data...</span>
+        </div>
+
+        <div id="errorMessage" class="error-message hidden"></div>
+
+        <div id="summaryContent" class="summary-content">
+            <div class="summary-header">
+                <h2>Market Prediction Overview</h2>
+                <p class="summary-subtitle">AI predictions across available tickers</p>
+            </div>
+
+            <!-- Dynamic Overview Cards -->
+            <div class="overview-cards">
+                <div class="overview-card">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number" id="totalPredictions">--</div>
+                        <div class="card-label">Total Predictions</div>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="card-header">
+                        <div class="card-icon">📈</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number" id="avgMovement">--</div>
+                        <div class="card-label">Avg Expected Move</div>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="card-header">
+                        <div class="card-icon">⬆️</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number" id="bullishCount">--</div>
+                        <div class="card-label">Bullish</div>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="card-header">
+                        <div class="card-icon">⬇️</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number" id="bearishCount">--</div>
+                        <div class="card-label">Bearish</div>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="card-header">
+                        <div class="card-icon">🔍</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">120</div>
+                        <div class="card-label">Days History</div>
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-number">5</div>
+                        <div class="card-label">Days Forecast</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model Information -->
+            <div class="performance-insights">
+                <div class="insight-card">
+                    <h3>🔬 Model Configuration</h3>
+                    <div class="model-stats">
+                        <div class="model-item">
+                            <span class="model-label">Model Type:</span>
+                            <span class="model-value">Complete OHLCV Monte Carlo</span>
+                        </div>
+                        <div class="model-item">
+                            <span class="model-label">Historical Context:</span>
+                            <span class="model-value">120 Days Lookback</span>
+                        </div>
+                        <div class="model-item">
+                            <span class="model-label">Prediction Horizon:</span>
+                            <span class="model-value">5 Trading Days</span>
+                        </div>
+                        <div class="model-item">
+                            <span class="model-label">Monte Carlo Simulations:</span>
+                            <span class="model-value">Multiple Paths per Ticker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Predictions (Dynamic) -->
+            <div class="search-prompt">
+                <p>💡 <strong>Start exploring:</strong> Type any ticker symbol above to view detailed predictions and analysis</p>
+                <div class="popular-tickers">
+                    <span class="ticker-tag" onclick="searchTicker('AAPL')">AAPL</span>
+                    <span class="ticker-tag" onclick="searchTicker('TSLA')">TSLA</span>
+                    <span class="ticker-tag" onclick="searchTicker('MSFT')">MSFT</span>
+                    <span class="ticker-tag" onclick="searchTicker('GOOGL')">GOOGL</span>
+                    <span class="ticker-tag" onclick="searchTicker('NVDA')">NVDA</span>
+                    <span class="ticker-tag" onclick="searchTicker('META')">META</span>
+                </div>
+
+                <div class="prediction-summary" id="predictionSummary">
+                    <h4>📊 Sample Predictions</h4>
+                    <div class="predictions-grid" id="predictionsGrid">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dashboardContent" class="hidden">
+            <!-- Dashboard content remains the same -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -10,33 +10,48 @@ class OHLCVDashboard {
         const searchBtn = document.getElementById('searchBtn');
 
         // Search on button click
-        searchBtn.addEventListener('click', () => {
-            this.searchTicker();
-        });
+        if (searchBtn) {
+            searchBtn.addEventListener('click', () => {
+                this.searchTicker();
+            });
+        }
 
         // Search on Enter key
-        searchInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                this.searchTicker();
-            }
-        });
+        if (searchInput) {
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    this.searchTicker();
+                }
+            });
+        }
 
         // Chart control listeners
-        document.getElementById('showPredictionBands').addEventListener('change', () => {
-            this.updateChart();
-        });
+        const predictionBands = document.getElementById('showPredictionBands');
+        const monteCarloSims = document.getElementById('showMonteCarloSims');
+        const actualData = document.getElementById('showActualData');
 
-        document.getElementById('showMonteCarloSims').addEventListener('change', () => {
-            this.updateChart();
-        });
+        if (predictionBands) {
+            predictionBands.addEventListener('change', () => {
+                this.updateChart();
+            });
+        }
 
-        document.getElementById('showActualData').addEventListener('change', () => {
-            this.updateChart();
-        });
+        if (monteCarloSims) {
+            monteCarloSims.addEventListener('change', () => {
+                this.updateChart();
+            });
+        }
+
+        if (actualData) {
+            actualData.addEventListener('change', () => {
+                this.updateChart();
+            });
+        }
     }
 
-    async searchTicker() {
-        const ticker = document.getElementById('tickerSearch').value.trim().toUpperCase();
+    async searchTicker(tickerValue = null) {
+        const searchInput = document.getElementById('tickerSearch');
+        const ticker = tickerValue || (searchInput ? searchInput.value.trim().toUpperCase() : '');
 
         if (!ticker) {
             this.showError('Please enter a ticker symbol');
@@ -599,3 +614,8 @@ class OHLCVDashboard {
 document.addEventListener('DOMContentLoaded', () => {
     new OHLCVDashboard();
 });
+
+// Export for testing purposes
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = OHLCVDashboard;
+}

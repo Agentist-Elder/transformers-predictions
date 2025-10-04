@@ -3,4 +3,4 @@ node_modules/
 .DS_Store
 .env
 dist/
-build/
+build/data/processed_candlestick_data.json
