@@ -6,6 +6,7 @@ module.exports = {
   collectCoverageFrom: [
     'app.js',
     'public/**/*.js',
+    'tests/validation-utils.js',
     '!public/**/*.min.js'
   ],
   coverageThreshold: {
@@ -18,8 +19,10 @@ module.exports = {
   },
   coverageReporters: ['text', 'lcov', 'html'],
   moduleDirectories: ['node_modules', '<rootDir>/'],
-  modulePathIgnorePatterns: ['<rootDir>/data/'],
+  modulePathIgnorePatterns: ['<rootDir>/data/', '<rootDir>/reports/'],
+  testTimeout: 300000, // 5 minutes for bulk validation tests
   globals: {
     'Chart': 'Chart'
-  }
+  },
+  setupFilesAfterEnv: ['<rootDir>/tests/setup.js']
 };

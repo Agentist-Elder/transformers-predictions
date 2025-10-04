@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Fix</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        async function testFix() {
+            try {
+                console.log('Testing AAPL data fix...');
+                const response = await fetch('data/AAPL_ohlcv_prediction.json');
+                const data = await response.json();
+
+                console.log('Original data structure:', {
+                    hasChartData: !!data.chart_data,
+                    keys: Object.keys(data.chart_data || {}),
+                    hasHistorical: !!data.chart_data?.historical,
+                    hasPredicted: !!data.chart_data?.predicted,
+                    historicalLength: data.chart_data?.historical?.length || 0,
+                    predictedLength: data.chart_data?.predicted?.length || 0
+                });
+
+                // Test the validateChartData function logic manually
+                if (data.chart_data &&
+                    data.chart_data.historical &&
+                    Array.isArray(data.chart_data.historical) &&
+                    data.chart_data.historical.length > 0 &&
+                    data.chart_data.predicted &&
+                    Array.isArray(data.chart_data.predicted)) {
+
+                    // Apply the fix
+                    data.chart_data.historical_candlesticks = data.chart_data.historical;
+                    data.chart_data.predicted_candlesticks = data.chart_data.predicted;
+
+                    console.log('After fix:', {
+                        hasHistoricalCandlesticks: !!data.chart_data.historical_candlesticks,
+                        hasPredictedCandlesticks: !!data.chart_data.predicted_candlesticks,
+                        historicalCandlesticksLength: data.chart_data.historical_candlesticks?.length || 0,
+                        predictedCandlesticksLength: data.chart_data.predicted_candlesticks?.length || 0
+                    });
+
+                    document.getElementById('result').innerHTML = `
+                        <h2>Fix Test Results</h2>
+                        <p><strong>✅ Fix works!</strong></p>
+                        <p>Historical data: ${data.chart_data.historical_candlesticks.length} records</p>
+                        <p>Predicted data: ${data.chart_data.predicted_candlesticks.length} records</p>
+                        <p>First historical date: ${data.chart_data.historical_candlesticks[0]?.date}</p>
+                        <p>First predicted date: ${data.chart_data.predicted_candlesticks[0]?.date}</p>
+                        <p>Last historical close: $${data.chart_data.historical_candlesticks[data.chart_data.historical_candlesticks.length-1]?.close}</p>
+                        <p>First predicted close: $${data.chart_data.predicted_candlesticks[0]?.close}</p>
+                    `;
+                } else {
+                    document.getElementById('result').innerHTML = '<h2>❌ Data structure still invalid</h2>';
+                }
+
+            } catch (error) {
+                console.error('Test failed:', error);
+                document.getElementById('result').innerHTML = `<h2>❌ Error: ${error.message}</h2>`;
+            }
+        }
+
+        testFix();
+    </script>
+</body>
+</html>

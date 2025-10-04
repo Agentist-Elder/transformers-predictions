@@ -266,20 +266,28 @@ class OHLCVDashboard {
         try {
             // Directly fetch the OHLCV prediction file
             const jsonUrl = `data/${ticker}_ohlcv_prediction.json`;
+            console.log(`Fetching data for ${ticker} from ${jsonUrl}`);
             const response = await fetch(jsonUrl);
 
             if (response.ok) {
                 const data = await response.json();
+                console.log(`Data loaded for ${ticker}:`, {
+                    hasChartData: !!data.chart_data,
+                    hasHistorical: !!(data.chart_data?.historical || data.chart_data?.historical_candlesticks),
+                    hasPredicted: !!(data.chart_data?.predicted || data.chart_data?.predicted_candlesticks),
+                    historicalLength: data.chart_data?.historical?.length || data.chart_data?.historical_candlesticks?.length || 0,
+                    predictedLength: data.chart_data?.predicted?.length || data.chart_data?.predicted_candlesticks?.length || 0
+                });
                 this.currentData = data;
                 this.displayDashboard(data);
             } else if (response.status === 404) {
                 this.showError(`${ticker} not found in the dataset`);
             } else {
-                throw new Error('Server error');
+                throw new Error(`Server error: ${response.status}`);
             }
         } catch (error) {
             console.error('Error fetching ticker data:', error);
-            this.showError(`${ticker} not found in the dataset`);
+            this.showError(`Error loading ${ticker}: ${error.message}`);
         }
     }
 
@@ -548,7 +556,22 @@ class OHLCVDashboard {
                 return true;
             }
 
-            console.error('Data missing required chart structure');
+            // Check for chart_data with alternative structure (actual data format)
+            if (data.chart_data &&
+                data.chart_data.historical &&
+                Array.isArray(data.chart_data.historical) &&
+                data.chart_data.historical.length > 0 &&
+                data.chart_data.predicted &&
+                Array.isArray(data.chart_data.predicted)) {
+
+                // Auto-fix the data structure for compatibility
+                data.chart_data.historical_candlesticks = data.chart_data.historical;
+                data.chart_data.predicted_candlesticks = data.chart_data.predicted;
+                console.log('Auto-fixed data structure for compatibility');
+                return true;
+            }
+
+            console.error('Data missing required chart structure. Available keys:', Object.keys(data.chart_data || {}));
             return false;
         } catch (error) {
             console.error('Error validating chart data:', error);

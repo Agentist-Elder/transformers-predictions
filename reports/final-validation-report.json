@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-10-04T04:52:13.358Z",
+  "summary": {
+    "totalFiles": 10919,
+    "validFiles": 10919,
+    "invalidFiles": 0,
+    "oldFormatFiles": 10919,
+    "newFormatFiles": 0,
+    "successRate": "100.00"
+  },
+  "fileFormats": {
+    "oldFormat": {
+      "count": 10919,
+      "description": "Legacy format with chart_data structure",
+      "requiredFields": [
+        "ticker_info",
+        "chart_data",
+        "summary_stats"
+      ]
+    },
+    "newFormat": {
+      "count": 0,
+      "description": "New format with predictions and monte_carlo_paths",
+      "requiredFields": [
+        "ticker_info",
+        "data",
+        "summary_stats"
+      ]
+    }
+  },
+  "dataQuality": {
+    "structuralIntegrity": "100.00",
+    "priceValidation": {
+      "valid": 15894,
+      "invalid": 0
+    },
+    "dateValidation": {
+      "valid": 10919,
+      "invalid": 0
+    },
+    "volumeValidation": {
+      "valid": 0,
+      "invalid": 0
+    }
+  },
+  "errors": [],
+  "warnings": [],
+  "recommendations": []
+}
