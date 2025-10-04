@@ -1,0 +1,48 @@
+{
+  "statistics": {
+    "total_predictions": 10914,
+    "bullish_count": 2059,
+    "bearish_count": 1567,
+    "neutral_count": 1974,
+    "avg_movement": 32794230212188.89,
+    "timestamp": "2025-10-04T04:02:48.050476"
+  },
+  "top_predictions": [
+    {
+      "ticker": "LICYQ",
+      "change_pct": 3.523999047001696e+17,
+      "direction": "Bullish",
+      "confidence": 95
+    },
+    {
+      "ticker": "FTCHQ",
+      "change_pct": -5516323829346893.0,
+      "direction": "Bearish",
+      "confidence": 95
+    },
+    {
+      "ticker": "AFMDQ",
+      "change_pct": -6072611.160002139,
+      "direction": "Bearish",
+      "confidence": 95
+    },
+    {
+      "ticker": "BIGGQ",
+      "change_pct": -219913.88244701992,
+      "direction": "Bearish",
+      "confidence": 95
+    },
+    {
+      "ticker": "SYRS",
+      "change_pct": 7796.117696591918,
+      "direction": "Bullish",
+      "confidence": 95
+    },
+    {
+      "ticker": "WOLF",
+      "change_pct": 312.5921249348678,
+      "direction": "Bullish",
+      "confidence": 95
+    }
+  ]
+}
