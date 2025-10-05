@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "KBE",
-    "last_update": "2025-10-04T12:05:48.681219",
+    "last_update": "2025-10-04T13:06:35.677621",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

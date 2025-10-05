@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BG",
-    "last_update": "2025-10-04T11:48:57.691198",
+    "last_update": "2025-10-04T12:49:44.274997",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HFFG",
-    "last_update": "2025-10-04T11:48:46.095593",
+    "last_update": "2025-10-04T12:49:32.387444",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

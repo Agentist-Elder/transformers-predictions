@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "DBP",
-    "last_update": "2025-10-04T11:48:59.860648",
+    "last_update": "2025-10-04T12:49:46.436905",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

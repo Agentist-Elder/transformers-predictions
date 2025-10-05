@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ICE",
-    "last_update": "2025-10-04T11:57:30.640701",
+    "last_update": "2025-10-04T12:58:17.707837",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

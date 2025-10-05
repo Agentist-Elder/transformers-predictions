@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CNXT",
-    "last_update": "2025-10-04T12:06:06.953266",
+    "last_update": "2025-10-04T13:06:54.100393",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

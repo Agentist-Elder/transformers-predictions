@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BNED",
-    "last_update": "2025-10-04T12:05:52.773650",
+    "last_update": "2025-10-04T13:06:39.848033",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

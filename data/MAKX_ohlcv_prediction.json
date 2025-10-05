@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MAKX",
-    "last_update": "2025-10-04T11:57:28.100677",
+    "last_update": "2025-10-04T12:58:15.097971",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

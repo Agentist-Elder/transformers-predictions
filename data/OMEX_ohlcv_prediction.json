@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "OMEX",
-    "last_update": "2025-10-04T12:05:58.311273",
+    "last_update": "2025-10-04T13:06:45.323091",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

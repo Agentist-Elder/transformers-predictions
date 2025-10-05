@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "INMD",
-    "last_update": "2025-10-04T11:57:38.193942",
+    "last_update": "2025-10-04T12:58:25.334054",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

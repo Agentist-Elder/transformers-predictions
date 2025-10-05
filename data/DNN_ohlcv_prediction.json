@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "DNN",
-    "last_update": "2025-10-04T12:05:48.319169",
+    "last_update": "2025-10-04T13:06:35.200167",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

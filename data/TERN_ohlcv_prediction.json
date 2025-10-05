@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TERN",
-    "last_update": "2025-10-04T11:48:59.654255",
+    "last_update": "2025-10-04T12:49:46.262233",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PHUN",
-    "last_update": "2025-10-04T11:49:05.628341",
+    "last_update": "2025-10-04T12:49:52.270157",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

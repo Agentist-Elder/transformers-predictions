@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SIFY",
-    "last_update": "2025-10-04T11:49:02.144058",
+    "last_update": "2025-10-04T12:49:48.758042",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

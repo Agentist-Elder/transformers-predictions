@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CXW",
-    "last_update": "2025-10-04T11:48:53.984327",
+    "last_update": "2025-10-04T12:49:40.418909",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

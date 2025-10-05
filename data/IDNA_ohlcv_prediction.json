@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IDNA",
-    "last_update": "2025-10-04T12:06:06.591164",
+    "last_update": "2025-10-04T13:06:53.740955",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

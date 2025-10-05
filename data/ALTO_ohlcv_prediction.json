@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ALTO",
-    "last_update": "2025-10-04T11:48:55.322185",
+    "last_update": "2025-10-04T12:49:41.819946",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

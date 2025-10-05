@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "JKHY",
-    "last_update": "2025-10-04T12:06:04.749893",
+    "last_update": "2025-10-04T13:06:51.848312",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

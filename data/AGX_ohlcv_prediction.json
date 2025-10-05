@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AGX",
-    "last_update": "2025-10-04T11:57:21.699803",
+    "last_update": "2025-10-04T12:58:08.667046",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

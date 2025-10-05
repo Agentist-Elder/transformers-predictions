@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "EPS",
-    "last_update": "2025-10-04T11:48:48.796554",
+    "last_update": "2025-10-04T12:49:35.144474",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

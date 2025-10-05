@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "NMAX",
-    "last_update": "2025-10-04T12:06:04.447208",
+    "last_update": "2025-10-04T13:06:51.537849",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "NTRA",
-    "last_update": "2025-10-04T12:06:00.405245",
+    "last_update": "2025-10-04T13:06:47.514918",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TOL",
-    "last_update": "2025-10-04T12:06:01.315281",
+    "last_update": "2025-10-04T13:06:48.405126",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

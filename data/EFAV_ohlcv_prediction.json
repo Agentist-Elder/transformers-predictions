@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "EFAV",
-    "last_update": "2025-10-04T11:48:50.631175",
+    "last_update": "2025-10-04T12:49:37.080026",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

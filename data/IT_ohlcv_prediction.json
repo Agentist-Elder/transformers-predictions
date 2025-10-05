@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IT",
-    "last_update": "2025-10-04T12:06:04.564166",
+    "last_update": "2025-10-04T13:06:51.606875",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

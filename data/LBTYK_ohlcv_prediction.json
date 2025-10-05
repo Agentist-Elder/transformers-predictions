@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LBTYK",
-    "last_update": "2025-10-04T11:48:52.694101",
+    "last_update": "2025-10-04T12:49:39.172195",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

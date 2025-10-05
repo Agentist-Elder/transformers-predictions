@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "QTWO",
-    "last_update": "2025-10-04T11:57:35.660920",
+    "last_update": "2025-10-04T12:58:22.712709",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

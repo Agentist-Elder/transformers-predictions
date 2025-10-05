@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CAR",
-    "last_update": "2025-10-04T11:57:32.806018",
+    "last_update": "2025-10-04T12:58:19.835995",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

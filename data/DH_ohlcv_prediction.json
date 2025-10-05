@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "DH",
-    "last_update": "2025-10-04T12:05:55.479129",
+    "last_update": "2025-10-04T13:06:42.587058",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

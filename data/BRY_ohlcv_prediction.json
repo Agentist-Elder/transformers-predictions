@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BRY",
-    "last_update": "2025-10-04T11:57:34.854643",
+    "last_update": "2025-10-04T12:58:21.908478",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

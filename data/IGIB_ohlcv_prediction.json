@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IGIB",
-    "last_update": "2025-10-04T11:57:24.263123",
+    "last_update": "2025-10-04T12:58:11.294032",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

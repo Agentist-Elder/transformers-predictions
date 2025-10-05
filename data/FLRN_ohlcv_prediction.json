@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FLRN",
-    "last_update": "2025-10-04T12:05:54.983084",
+    "last_update": "2025-10-04T13:06:42.010404",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

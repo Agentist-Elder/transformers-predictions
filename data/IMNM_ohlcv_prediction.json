@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IMNM",
-    "last_update": "2025-10-04T12:05:59.292891",
+    "last_update": "2025-10-04T13:06:46.392373",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

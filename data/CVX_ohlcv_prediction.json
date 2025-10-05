@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CVX",
-    "last_update": "2025-10-04T11:57:33.687154",
+    "last_update": "2025-10-04T12:58:20.749304",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

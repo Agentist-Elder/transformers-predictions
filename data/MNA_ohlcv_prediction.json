@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MNA",
-    "last_update": "2025-10-04T11:57:28.775047",
+    "last_update": "2025-10-04T12:58:15.832834",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

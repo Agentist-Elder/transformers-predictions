@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "GME",
-    "last_update": "2025-10-04T12:05:57.435776",
+    "last_update": "2025-10-04T13:06:44.456388",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

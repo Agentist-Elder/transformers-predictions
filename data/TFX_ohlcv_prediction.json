@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TFX",
-    "last_update": "2025-10-04T12:05:55.501850",
+    "last_update": "2025-10-04T13:06:42.598606",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

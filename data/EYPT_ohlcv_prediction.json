@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "EYPT",
-    "last_update": "2025-10-04T11:57:27.895075",
+    "last_update": "2025-10-04T12:58:14.925690",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

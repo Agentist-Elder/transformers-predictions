@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VXRT",
-    "last_update": "2025-10-04T12:05:55.214360",
+    "last_update": "2025-10-04T13:06:42.298152",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

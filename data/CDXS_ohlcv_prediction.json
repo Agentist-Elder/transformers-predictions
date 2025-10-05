@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CDXS",
-    "last_update": "2025-10-04T11:48:57.967459",
+    "last_update": "2025-10-04T12:49:44.566849",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

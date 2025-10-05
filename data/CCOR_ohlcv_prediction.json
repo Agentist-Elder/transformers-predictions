@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CCOR",
-    "last_update": "2025-10-04T11:57:25.343245",
+    "last_update": "2025-10-04T12:58:12.402886",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HYBB",
-    "last_update": "2025-10-04T11:49:02.694055",
+    "last_update": "2025-10-04T12:49:49.267448",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MRUS",
-    "last_update": "2025-10-04T12:05:57.596532",
+    "last_update": "2025-10-04T13:06:44.640469",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

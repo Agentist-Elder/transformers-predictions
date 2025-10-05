@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TV",
-    "last_update": "2025-10-04T11:57:36.535462",
+    "last_update": "2025-10-04T12:58:23.625082",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

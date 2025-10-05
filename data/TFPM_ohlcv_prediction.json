@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TFPM",
-    "last_update": "2025-10-04T11:48:50.971155",
+    "last_update": "2025-10-04T12:49:37.409351",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

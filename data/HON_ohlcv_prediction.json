@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HON",
-    "last_update": "2025-10-04T12:05:56.302528",
+    "last_update": "2025-10-04T13:06:43.349910",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

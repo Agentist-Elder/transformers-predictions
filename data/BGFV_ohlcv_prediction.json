@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BGFV",
-    "last_update": "2025-10-04T11:57:38.655131",
+    "last_update": "2025-10-04T12:58:25.838992",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VCTR",
-    "last_update": "2025-10-04T11:49:04.288891",
+    "last_update": "2025-10-04T12:49:50.926125",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

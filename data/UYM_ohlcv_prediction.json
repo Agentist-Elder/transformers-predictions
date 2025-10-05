@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "UYM",
-    "last_update": "2025-10-04T12:06:06.001646",
+    "last_update": "2025-10-04T13:06:53.149665",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

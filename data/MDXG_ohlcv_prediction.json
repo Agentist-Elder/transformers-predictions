@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MDXG",
-    "last_update": "2025-10-04T11:48:53.339875",
+    "last_update": "2025-10-04T12:49:39.800909",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

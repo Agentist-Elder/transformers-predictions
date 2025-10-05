@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CLDX",
-    "last_update": "2025-10-04T12:06:02.920760",
+    "last_update": "2025-10-04T13:06:50.051988",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

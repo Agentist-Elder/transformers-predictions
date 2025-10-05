@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CVLT",
-    "last_update": "2025-10-04T12:06:00.738835",
+    "last_update": "2025-10-04T13:06:47.828542",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

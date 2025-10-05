@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FMNB",
-    "last_update": "2025-10-04T11:57:18.073669",
+    "last_update": "2025-10-04T12:58:05.133883",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

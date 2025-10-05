@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "RJF",
-    "last_update": "2025-10-04T11:48:52.705551",
+    "last_update": "2025-10-04T12:49:39.195466",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

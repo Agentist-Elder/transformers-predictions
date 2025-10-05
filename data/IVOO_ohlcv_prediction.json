@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IVOO",
-    "last_update": "2025-10-04T12:05:53.248735",
+    "last_update": "2025-10-04T13:06:40.331923",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

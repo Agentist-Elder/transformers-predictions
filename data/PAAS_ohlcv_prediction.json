@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PAAS",
-    "last_update": "2025-10-04T11:48:57.174858",
+    "last_update": "2025-10-04T12:49:43.754467",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

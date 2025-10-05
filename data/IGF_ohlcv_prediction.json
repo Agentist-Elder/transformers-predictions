@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IGF",
-    "last_update": "2025-10-04T12:06:07.497018",
+    "last_update": "2025-10-04T13:06:54.634193",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

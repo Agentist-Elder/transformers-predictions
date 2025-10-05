@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "RLY",
-    "last_update": "2025-10-04T12:06:00.097189",
+    "last_update": "2025-10-04T13:06:47.237090",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

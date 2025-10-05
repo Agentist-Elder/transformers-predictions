@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HSIC",
-    "last_update": "2025-10-04T11:57:29.969008",
+    "last_update": "2025-10-04T12:58:17.015017",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

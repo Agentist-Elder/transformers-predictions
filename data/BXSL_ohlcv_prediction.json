@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BXSL",
-    "last_update": "2025-10-04T12:06:06.579840",
+    "last_update": "2025-10-04T13:06:53.683463",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

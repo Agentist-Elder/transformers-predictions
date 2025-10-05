@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CYBR",
-    "last_update": "2025-10-04T11:57:33.504120",
+    "last_update": "2025-10-04T12:58:20.553786",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CHGX",
-    "last_update": "2025-10-04T12:05:52.411558",
+    "last_update": "2025-10-04T13:06:39.468665",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

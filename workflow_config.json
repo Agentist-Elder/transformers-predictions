@@ -1,0 +1,40 @@
+{
+  "finnhub_data_dir": "/home/jarden/finnhub-data",
+  "predictions_dir": "/home/jarden/transformers-predictions/data",
+  "ticker_file": "/home/jarden/option-data/unique_underlying_symbols.txt",
+  "model_path": "/home/jarden/kronos-pipeline/kronos-base",
+  "lookback_days": 120,
+  "prediction_days": 5,
+  "monte_carlo_runs": 10,
+  "batch_strategy": "adaptive",
+  "max_retries": 5,
+  "cleanup_days": 7,
+  "cloudflare_project": "kronos-hoad",
+  "use_wrangler": true,
+  "git_repo": "/home/jarden/transformers-predictions",
+  "csv_output": "/home/jarden/transformers-predictions/predictions_summary.csv",
+  "use_gpu": true,
+  "max_batch_size": 100,
+  "min_batch_size": 1,
+  "gpu_memory_threshold": 0.9,
+  "parallel_workers": 4,
+  "log_level": "INFO",
+  "notification_channels": ["console"],
+  "data_validation": {
+    "check_ohlc_integrity": true,
+    "max_null_percentage": 0.1,
+    "max_price_change": 0.5
+  },
+  "batch_optimization": {
+    "enable_dynamic_sizing": true,
+    "initial_batch_fraction": 1.0,
+    "reduction_factor": 0.5,
+    "min_batch_fraction": 0.1
+  },
+  "deployment": {
+    "auto_deploy": true,
+    "validate_before_deploy": true,
+    "rollback_on_failure": true,
+    "deployment_branch": "main"
+  }
+}

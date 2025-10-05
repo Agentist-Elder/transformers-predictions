@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "APP",
-    "last_update": "2025-10-04T12:06:05.797690",
+    "last_update": "2025-10-04T13:06:52.949447",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

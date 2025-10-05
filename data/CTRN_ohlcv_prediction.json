@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CTRN",
-    "last_update": "2025-10-04T11:57:26.017969",
+    "last_update": "2025-10-04T12:58:13.030175",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

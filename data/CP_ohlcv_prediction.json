@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CP",
-    "last_update": "2025-10-04T12:05:59.720298",
+    "last_update": "2025-10-04T13:06:46.820601",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

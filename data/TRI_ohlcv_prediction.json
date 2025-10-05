@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TRI",
-    "last_update": "2025-10-04T12:05:58.472684",
+    "last_update": "2025-10-04T13:06:45.507317",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

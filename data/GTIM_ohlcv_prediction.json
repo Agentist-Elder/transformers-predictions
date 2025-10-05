@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "GTIM",
-    "last_update": "2025-10-04T12:05:47.253719",
+    "last_update": "2025-10-04T13:06:34.230895",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

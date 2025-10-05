@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ONLN",
-    "last_update": "2025-10-04T11:49:03.669333",
+    "last_update": "2025-10-04T12:49:50.270249",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

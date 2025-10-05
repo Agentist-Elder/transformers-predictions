@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "GVA",
-    "last_update": "2025-10-04T11:57:22.947321",
+    "last_update": "2025-10-04T12:58:09.952184",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

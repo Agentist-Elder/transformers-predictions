@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "WOLF",
-    "last_update": "2025-10-04T12:05:58.682100",
+    "last_update": "2025-10-04T13:06:45.760479",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

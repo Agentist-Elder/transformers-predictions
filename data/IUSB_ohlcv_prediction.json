@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IUSB",
-    "last_update": "2025-10-04T11:57:27.025473",
+    "last_update": "2025-10-04T12:58:14.051992",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

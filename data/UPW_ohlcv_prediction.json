@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "UPW",
-    "last_update": "2025-10-04T12:05:51.926190",
+    "last_update": "2025-10-04T13:06:38.971052",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

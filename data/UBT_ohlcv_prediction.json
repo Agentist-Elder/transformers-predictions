@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "UBT",
-    "last_update": "2025-10-04T12:06:01.868805",
+    "last_update": "2025-10-04T13:06:48.936262",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

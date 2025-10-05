@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "QCML",
-    "last_update": "2025-10-04T11:49:02.236015",
+    "last_update": "2025-10-04T12:49:48.827214",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

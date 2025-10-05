@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "NOG",
-    "last_update": "2025-10-04T11:57:32.437350",
+    "last_update": "2025-10-04T12:58:19.479798",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

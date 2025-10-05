@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CNQ",
-    "last_update": "2025-10-04T11:48:50.278254",
+    "last_update": "2025-10-04T12:49:36.728862",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

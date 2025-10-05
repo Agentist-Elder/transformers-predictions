@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ENPH",
-    "last_update": "2025-10-04T12:06:06.783973",
+    "last_update": "2025-10-04T13:06:53.925024",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

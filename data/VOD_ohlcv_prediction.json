@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VOD",
-    "last_update": "2025-10-04T11:48:47.263036",
+    "last_update": "2025-10-04T12:49:33.593369",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

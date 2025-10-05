@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IMPP",
-    "last_update": "2025-10-04T11:57:36.411087",
+    "last_update": "2025-10-04T12:58:23.482992",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

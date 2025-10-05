@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "METC",
-    "last_update": "2025-10-04T11:48:56.820136",
+    "last_update": "2025-10-04T12:49:43.377581",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

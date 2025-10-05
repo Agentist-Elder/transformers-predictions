@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SBB",
-    "last_update": "2025-10-04T12:06:00.715926",
+    "last_update": "2025-10-04T13:06:47.782489",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

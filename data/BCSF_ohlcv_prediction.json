@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BCSF",
-    "last_update": "2025-10-04T12:05:54.647720",
+    "last_update": "2025-10-04T13:06:41.734040",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

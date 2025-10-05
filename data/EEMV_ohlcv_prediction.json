@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "EEMV",
-    "last_update": "2025-10-04T11:57:21.920360",
+    "last_update": "2025-10-04T12:58:08.901189",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

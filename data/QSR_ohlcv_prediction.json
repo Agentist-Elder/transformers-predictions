@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "QSR",
-    "last_update": "2025-10-04T11:57:31.487594",
+    "last_update": "2025-10-04T12:58:18.526172",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

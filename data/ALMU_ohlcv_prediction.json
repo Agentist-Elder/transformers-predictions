@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ALMU",
-    "last_update": "2025-10-04T11:48:57.133257",
+    "last_update": "2025-10-04T12:49:43.742004",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

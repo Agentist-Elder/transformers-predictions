@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CASY",
-    "last_update": "2025-10-04T11:57:25.858030",
+    "last_update": "2025-10-04T12:58:12.893473",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

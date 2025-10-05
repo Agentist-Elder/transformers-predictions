@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BRBS",
-    "last_update": "2025-10-04T11:49:07.371740",
+    "last_update": "2025-10-04T12:49:53.980791",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

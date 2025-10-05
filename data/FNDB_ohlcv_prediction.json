@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FNDB",
-    "last_update": "2025-10-04T11:57:33.526799",
+    "last_update": "2025-10-04T12:58:20.542359",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

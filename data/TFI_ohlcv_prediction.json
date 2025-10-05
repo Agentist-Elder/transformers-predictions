@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TFI",
-    "last_update": "2025-10-04T11:49:07.175512",
+    "last_update": "2025-10-04T12:49:53.876078",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

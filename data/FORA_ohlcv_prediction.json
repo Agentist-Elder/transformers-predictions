@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FORA",
-    "last_update": "2025-10-04T11:57:33.515458",
+    "last_update": "2025-10-04T12:58:20.530867",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

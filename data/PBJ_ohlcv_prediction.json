@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PBJ",
-    "last_update": "2025-10-04T12:06:04.669523",
+    "last_update": "2025-10-04T13:06:51.744761",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "EWTX",
-    "last_update": "2025-10-04T11:49:01.557846",
+    "last_update": "2025-10-04T12:49:48.179509",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

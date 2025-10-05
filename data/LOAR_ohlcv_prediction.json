@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LOAR",
-    "last_update": "2025-10-04T11:57:29.360618",
+    "last_update": "2025-10-04T12:58:16.417827",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

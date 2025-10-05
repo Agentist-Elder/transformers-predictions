@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SPYX",
-    "last_update": "2025-10-04T12:05:57.874079",
+    "last_update": "2025-10-04T13:06:44.955035",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

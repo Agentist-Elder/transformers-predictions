@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TPB",
-    "last_update": "2025-10-04T11:49:05.410257",
+    "last_update": "2025-10-04T12:49:52.012850",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

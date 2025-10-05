@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "DTD",
-    "last_update": "2025-10-04T11:48:49.868518",
+    "last_update": "2025-10-04T12:49:36.307607",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

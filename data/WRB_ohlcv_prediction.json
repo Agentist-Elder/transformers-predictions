@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "WRB",
-    "last_update": "2025-10-04T11:49:01.305674",
+    "last_update": "2025-10-04T12:49:47.933040",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MYRG",
-    "last_update": "2025-10-04T11:57:24.217339",
+    "last_update": "2025-10-04T12:58:11.305419",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

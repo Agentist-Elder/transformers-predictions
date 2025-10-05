@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "INVH",
-    "last_update": "2025-10-04T12:05:56.879494",
+    "last_update": "2025-10-04T13:06:43.949136",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

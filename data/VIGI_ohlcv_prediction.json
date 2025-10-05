@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VIGI",
-    "last_update": "2025-10-04T12:05:51.474157",
+    "last_update": "2025-10-04T13:06:38.557274",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

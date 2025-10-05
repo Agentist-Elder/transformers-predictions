@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FDUS",
-    "last_update": "2025-10-04T11:57:32.151809",
+    "last_update": "2025-10-04T12:58:19.157700",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PDBA",
-    "last_update": "2025-10-04T11:57:20.962615",
+    "last_update": "2025-10-04T12:58:07.978009",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

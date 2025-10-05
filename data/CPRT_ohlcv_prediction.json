@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CPRT",
-    "last_update": "2025-10-04T11:57:17.610322",
+    "last_update": "2025-10-04T12:58:04.652018",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

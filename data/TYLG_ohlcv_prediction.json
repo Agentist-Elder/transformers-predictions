@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TYLG",
-    "last_update": "2025-10-04T12:05:49.980122",
+    "last_update": "2025-10-04T13:06:37.025559",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

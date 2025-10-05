@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FDEM",
-    "last_update": "2025-10-04T11:48:56.268598",
+    "last_update": "2025-10-04T12:49:42.762243",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

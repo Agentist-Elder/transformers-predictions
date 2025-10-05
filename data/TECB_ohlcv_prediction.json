@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TECB",
-    "last_update": "2025-10-04T12:05:48.104443",
+    "last_update": "2025-10-04T13:06:35.073709",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

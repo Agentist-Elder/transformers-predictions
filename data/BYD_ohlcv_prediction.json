@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BYD",
-    "last_update": "2025-10-04T11:57:28.032300",
+    "last_update": "2025-10-04T12:58:15.029069",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SMBK",
-    "last_update": "2025-10-04T12:05:49.968810",
+    "last_update": "2025-10-04T13:06:36.990782",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

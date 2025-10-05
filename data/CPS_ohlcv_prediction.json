@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CPS",
-    "last_update": "2025-10-04T12:05:51.993691",
+    "last_update": "2025-10-04T13:06:39.110617",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SPXV",
-    "last_update": "2025-10-04T11:57:31.761965",
+    "last_update": "2025-10-04T12:58:18.813516",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

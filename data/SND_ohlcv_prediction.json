@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SND",
-    "last_update": "2025-10-04T12:06:01.720504",
+    "last_update": "2025-10-04T13:06:48.763396",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

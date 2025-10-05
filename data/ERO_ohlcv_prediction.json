@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ERO",
-    "last_update": "2025-10-04T11:49:01.420124",
+    "last_update": "2025-10-04T12:49:48.097478",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

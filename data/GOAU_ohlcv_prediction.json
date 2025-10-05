@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "GOAU",
-    "last_update": "2025-10-04T12:05:53.519823",
+    "last_update": "2025-10-04T13:06:40.607772",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

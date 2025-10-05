@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AVGX",
-    "last_update": "2025-10-04T11:57:38.418673",
+    "last_update": "2025-10-04T12:58:25.517591",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IMKTA",
-    "last_update": "2025-10-04T11:49:02.006369",
+    "last_update": "2025-10-04T12:49:48.550261",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

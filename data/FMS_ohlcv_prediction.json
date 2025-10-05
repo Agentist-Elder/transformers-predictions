@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FMS",
-    "last_update": "2025-10-04T12:05:46.991383",
+    "last_update": "2025-10-04T13:06:33.971872",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

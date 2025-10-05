@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HE",
-    "last_update": "2025-10-04T11:57:36.964823",
+    "last_update": "2025-10-04T12:58:24.026450",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

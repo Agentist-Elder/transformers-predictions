@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SFD",
-    "last_update": "2025-10-04T12:06:03.724451",
+    "last_update": "2025-10-04T13:06:50.812334",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

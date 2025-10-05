@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PROF",
-    "last_update": "2025-10-04T11:57:26.315491",
+    "last_update": "2025-10-04T12:58:13.269548",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,
