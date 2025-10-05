@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FNX",
-    "last_update": "2025-10-04T12:49:45.748091",
+    "last_update": "2025-10-05T11:10:26.473972",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

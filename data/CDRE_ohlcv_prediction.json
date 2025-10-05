@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CDRE",
-    "last_update": "2025-10-04T12:58:12.129171",
+    "last_update": "2025-10-05T11:18:53.489134",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

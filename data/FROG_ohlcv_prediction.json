@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FROG",
-    "last_update": "2025-10-04T12:58:13.395794",
+    "last_update": "2025-10-05T11:18:54.721466",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

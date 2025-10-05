@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "GORV",
-    "last_update": "2025-10-04T12:58:15.017616",
+    "last_update": "2025-10-05T11:18:56.354588",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

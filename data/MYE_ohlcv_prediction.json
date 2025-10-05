@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MYE",
-    "last_update": "2025-10-04T13:06:52.499396",
+    "last_update": "2025-10-05T11:27:34.215285",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

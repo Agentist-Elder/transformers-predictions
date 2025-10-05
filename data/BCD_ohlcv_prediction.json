@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BCD",
-    "last_update": "2025-10-04T13:06:47.642200",
+    "last_update": "2025-10-05T11:27:29.328667",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

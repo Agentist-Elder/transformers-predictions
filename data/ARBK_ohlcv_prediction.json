@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ARBK",
-    "last_update": "2025-10-04T12:49:32.677400",
+    "last_update": "2025-10-05T11:10:13.631239",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

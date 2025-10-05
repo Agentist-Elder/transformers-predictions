@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "RRR",
-    "last_update": "2025-10-04T12:58:17.153981",
+    "last_update": "2025-10-05T11:18:58.572614",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

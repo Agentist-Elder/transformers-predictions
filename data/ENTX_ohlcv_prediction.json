@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ENTX",
-    "last_update": "2025-10-04T12:58:06.156951",
+    "last_update": "2025-10-05T11:18:47.505427",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

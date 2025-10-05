@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TNA",
-    "last_update": "2025-10-04T13:06:51.238494",
+    "last_update": "2025-10-05T11:27:32.936742",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

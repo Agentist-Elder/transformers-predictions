@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CGC",
-    "last_update": "2025-10-04T12:49:43.670801",
+    "last_update": "2025-10-05T11:10:24.447584",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

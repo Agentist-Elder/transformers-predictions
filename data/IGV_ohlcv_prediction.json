@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IGV",
-    "last_update": "2025-10-04T12:49:39.312250",
+    "last_update": "2025-10-05T11:10:20.190767",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

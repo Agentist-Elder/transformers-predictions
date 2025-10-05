@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "YQ",
-    "last_update": "2025-10-04T13:06:47.283290",
+    "last_update": "2025-10-05T11:27:28.996267",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

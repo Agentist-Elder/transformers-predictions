@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HBM",
-    "last_update": "2025-10-04T12:58:04.389005",
+    "last_update": "2025-10-05T11:18:45.807503",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

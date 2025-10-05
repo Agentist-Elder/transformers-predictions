@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PFGC",
-    "last_update": "2025-10-04T12:49:52.491197",
+    "last_update": "2025-10-05T11:10:33.087305",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AAPW",
-    "last_update": "2025-10-04T12:58:25.586388",
+    "last_update": "2025-10-05T11:19:06.886765",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AMDY",
-    "last_update": "2025-10-04T12:49:50.175133",
+    "last_update": "2025-10-05T11:10:30.813598",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

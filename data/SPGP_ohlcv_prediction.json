@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SPGP",
-    "last_update": "2025-10-04T13:06:41.273881",
+    "last_update": "2025-10-05T11:27:23.056727",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

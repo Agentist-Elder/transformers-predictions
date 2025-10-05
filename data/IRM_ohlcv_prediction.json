@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IRM",
-    "last_update": "2025-10-04T12:58:20.065971",
+    "last_update": "2025-10-05T11:19:01.415453",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

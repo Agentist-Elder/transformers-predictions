@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FTLS",
-    "last_update": "2025-10-04T12:58:09.997936",
+    "last_update": "2025-10-05T11:18:51.373995",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

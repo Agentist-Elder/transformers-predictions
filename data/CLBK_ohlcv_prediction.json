@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CLBK",
-    "last_update": "2025-10-04T13:06:50.938979",
+    "last_update": "2025-10-05T11:27:32.593339",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "OPRT",
-    "last_update": "2025-10-04T12:49:36.167477",
+    "last_update": "2025-10-05T11:10:17.035101",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

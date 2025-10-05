@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "UVIX",
-    "last_update": "2025-10-04T13:06:45.001103",
+    "last_update": "2025-10-05T11:27:26.668673",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

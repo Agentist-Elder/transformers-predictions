@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "GREK",
-    "last_update": "2025-10-04T12:58:15.511331",
+    "last_update": "2025-10-05T11:18:56.769457",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "WELL",
-    "last_update": "2025-10-04T12:49:50.972638",
+    "last_update": "2025-10-05T11:10:31.648470",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

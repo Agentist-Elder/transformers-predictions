@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "YSG",
-    "last_update": "2025-10-04T12:58:25.678340",
+    "last_update": "2025-10-05T11:19:07.022997",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "THCH",
-    "last_update": "2025-10-04T12:49:50.198569",
+    "last_update": "2025-10-05T11:10:30.870300",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CCJ",
-    "last_update": "2025-10-04T12:49:43.116209",
+    "last_update": "2025-10-05T11:10:23.903311",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

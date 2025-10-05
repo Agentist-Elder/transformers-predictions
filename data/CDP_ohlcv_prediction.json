@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CDP",
-    "last_update": "2025-10-04T12:58:08.820748",
+    "last_update": "2025-10-05T11:18:50.204156",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

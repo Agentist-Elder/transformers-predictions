@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "QDTE",
-    "last_update": "2025-10-04T12:58:10.731902",
+    "last_update": "2025-10-05T11:18:52.085246",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

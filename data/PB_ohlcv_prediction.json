@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PB",
-    "last_update": "2025-10-04T12:58:16.934740",
+    "last_update": "2025-10-05T11:18:58.336991",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

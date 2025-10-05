@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LIVR",
-    "last_update": "2025-10-04T12:58:14.177384",
+    "last_update": "2025-10-05T11:18:55.503500",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

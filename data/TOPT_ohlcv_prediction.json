@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TOPT",
-    "last_update": "2025-10-04T13:06:39.652291",
+    "last_update": "2025-10-05T11:27:21.400538",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

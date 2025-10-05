@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BTI",
-    "last_update": "2025-10-04T13:06:48.094009",
+    "last_update": "2025-10-05T11:27:29.798224",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "INDB",
-    "last_update": "2025-10-04T12:49:45.139845",
+    "last_update": "2025-10-05T11:10:25.839835",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

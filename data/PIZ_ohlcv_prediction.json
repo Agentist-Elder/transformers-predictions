@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PIZ",
-    "last_update": "2025-10-04T12:49:51.452230",
+    "last_update": "2025-10-05T11:10:32.071433",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

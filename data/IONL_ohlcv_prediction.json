@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IONL",
-    "last_update": "2025-10-04T12:49:38.587935",
+    "last_update": "2025-10-05T11:10:19.400757",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

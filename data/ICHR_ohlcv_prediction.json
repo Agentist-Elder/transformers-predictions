@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ICHR",
-    "last_update": "2025-10-04T12:49:44.095240",
+    "last_update": "2025-10-05T11:10:24.793682",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

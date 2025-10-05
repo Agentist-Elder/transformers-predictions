@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MNDO",
-    "last_update": "2025-10-04T13:06:41.090001",
+    "last_update": "2025-10-05T11:27:22.828303",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

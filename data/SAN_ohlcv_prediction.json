@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SAN",
-    "last_update": "2025-10-04T12:58:07.828797",
+    "last_update": "2025-10-05T11:18:49.129988",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

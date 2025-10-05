@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AVNM",
-    "last_update": "2025-10-04T13:06:40.860863",
+    "last_update": "2025-10-05T11:27:22.599399",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

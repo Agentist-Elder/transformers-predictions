@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "KBH",
-    "last_update": "2025-10-04T13:06:38.396089",
+    "last_update": "2025-10-05T11:27:20.202495",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

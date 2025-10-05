@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IMMX",
-    "last_update": "2025-10-04T12:49:49.069613",
+    "last_update": "2025-10-05T11:10:29.798746",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

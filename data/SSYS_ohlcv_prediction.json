@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SSYS",
-    "last_update": "2025-10-04T13:06:49.155060",
+    "last_update": "2025-10-05T11:27:30.871520",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SPBC",
-    "last_update": "2025-10-04T12:49:46.599995",
+    "last_update": "2025-10-05T11:10:27.299144",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LDI",
-    "last_update": "2025-10-04T12:58:05.696300",
+    "last_update": "2025-10-05T11:18:47.087299",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

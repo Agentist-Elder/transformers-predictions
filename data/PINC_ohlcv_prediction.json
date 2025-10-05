@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PINC",
-    "last_update": "2025-10-04T12:49:49.209192",
+    "last_update": "2025-10-05T11:10:29.855568",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

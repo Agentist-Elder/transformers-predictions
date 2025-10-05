@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HOOK",
-    "last_update": "2025-10-04T12:58:16.291745",
+    "last_update": "2025-10-05T11:18:57.623071",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

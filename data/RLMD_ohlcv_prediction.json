@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "RLMD",
-    "last_update": "2025-10-04T12:58:19.066081",
+    "last_update": "2025-10-05T11:19:00.461076",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "EVTL",
-    "last_update": "2025-10-04T13:06:43.026586",
+    "last_update": "2025-10-05T11:27:24.701343",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

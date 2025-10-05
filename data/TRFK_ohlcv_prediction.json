@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TRFK",
-    "last_update": "2025-10-04T13:06:45.910151",
+    "last_update": "2025-10-05T11:27:27.654245",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

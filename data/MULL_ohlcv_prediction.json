@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MULL",
-    "last_update": "2025-10-04T13:06:47.572595",
+    "last_update": "2025-10-05T11:27:29.260156",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

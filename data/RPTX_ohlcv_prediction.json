@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "RPTX",
-    "last_update": "2025-10-04T13:06:54.215395",
+    "last_update": "2025-10-05T11:27:35.851700",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

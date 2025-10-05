@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BRK.B",
-    "last_update": "2025-10-04T13:06:37.993571",
+    "last_update": "2025-10-05T11:27:19.745640",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "NOA",
-    "last_update": "2025-10-04T12:58:21.885192",
+    "last_update": "2025-10-05T11:19:03.386690",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

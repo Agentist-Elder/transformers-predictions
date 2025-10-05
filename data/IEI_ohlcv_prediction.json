@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IEI",
-    "last_update": "2025-10-04T12:49:54.015978",
+    "last_update": "2025-10-05T11:10:34.595251",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

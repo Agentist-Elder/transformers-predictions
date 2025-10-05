@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "WCBR",
-    "last_update": "2025-10-04T12:58:13.799306",
+    "last_update": "2025-10-05T11:18:55.054657",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

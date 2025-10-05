@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "DFLV",
-    "last_update": "2025-10-04T12:49:38.997170",
+    "last_update": "2025-10-05T11:10:19.864087",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FELE",
-    "last_update": "2025-10-04T12:58:07.699034",
+    "last_update": "2025-10-05T11:18:48.992438",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BRZE",
-    "last_update": "2025-10-04T13:06:39.273224",
+    "last_update": "2025-10-05T11:27:21.021416",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

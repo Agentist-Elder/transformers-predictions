@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SPIP",
-    "last_update": "2025-10-04T12:49:47.742562",
+    "last_update": "2025-10-05T11:10:28.472775",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FLWS",
-    "last_update": "2025-10-04T13:06:34.797831",
+    "last_update": "2025-10-05T11:27:16.513304",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

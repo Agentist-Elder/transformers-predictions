@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SURG",
-    "last_update": "2025-10-04T12:49:50.412737",
+    "last_update": "2025-10-05T11:10:31.112453",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SITM",
-    "last_update": "2025-10-04T12:49:34.275173",
+    "last_update": "2025-10-05T11:10:15.203754",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

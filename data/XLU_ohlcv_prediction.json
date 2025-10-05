@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "XLU",
-    "last_update": "2025-10-04T12:58:18.468476",
+    "last_update": "2025-10-05T11:18:59.796588",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

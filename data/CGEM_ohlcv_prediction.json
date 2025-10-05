@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CGEM",
-    "last_update": "2025-10-04T12:58:22.034746",
+    "last_update": "2025-10-05T11:19:03.592908",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "KRP",
-    "last_update": "2025-10-04T12:58:05.845268",
+    "last_update": "2025-10-05T11:18:47.189307",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

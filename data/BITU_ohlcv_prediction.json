@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "BITU",
-    "last_update": "2025-10-04T13:06:34.623999",
+    "last_update": "2025-10-05T11:27:16.352137",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

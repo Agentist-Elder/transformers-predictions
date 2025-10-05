@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SDEM",
-    "last_update": "2025-10-04T13:06:54.691565",
+    "last_update": "2025-10-05T11:27:36.384857",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

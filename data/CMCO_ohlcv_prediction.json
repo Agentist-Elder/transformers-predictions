@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CMCO",
-    "last_update": "2025-10-04T12:49:39.463984",
+    "last_update": "2025-10-05T11:10:20.294368",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

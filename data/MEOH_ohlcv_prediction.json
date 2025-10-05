@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MEOH",
-    "last_update": "2025-10-04T12:58:23.969444",
+    "last_update": "2025-10-05T11:19:05.258893",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

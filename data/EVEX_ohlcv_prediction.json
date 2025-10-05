@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "EVEX",
-    "last_update": "2025-10-04T13:06:42.286622",
+    "last_update": "2025-10-05T11:27:24.083806",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

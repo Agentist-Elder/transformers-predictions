@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TOST",
-    "last_update": "2025-10-04T12:58:09.211322",
+    "last_update": "2025-10-05T11:18:50.534762",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

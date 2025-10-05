@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "XNTK",
-    "last_update": "2025-10-04T12:49:33.640196",
+    "last_update": "2025-10-05T11:10:14.569014",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

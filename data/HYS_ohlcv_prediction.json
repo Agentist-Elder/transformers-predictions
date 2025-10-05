@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HYS",
-    "last_update": "2025-10-04T13:06:39.296256",
+    "last_update": "2025-10-05T11:27:21.113448",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

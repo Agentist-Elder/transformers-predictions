@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VCYT",
-    "last_update": "2025-10-04T13:06:43.061099",
+    "last_update": "2025-10-05T11:27:24.862246",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

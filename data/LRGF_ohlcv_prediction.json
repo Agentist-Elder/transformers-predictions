@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LRGF",
-    "last_update": "2025-10-04T12:58:25.540504",
+    "last_update": "2025-10-05T11:19:06.922330",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

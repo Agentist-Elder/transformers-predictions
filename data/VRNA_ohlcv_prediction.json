@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VRNA",
-    "last_update": "2025-10-04T13:06:43.003509",
+    "last_update": "2025-10-05T11:27:24.712748",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

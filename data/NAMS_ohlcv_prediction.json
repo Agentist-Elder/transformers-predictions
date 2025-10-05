@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "NAMS",
-    "last_update": "2025-10-04T12:58:19.548900",
+    "last_update": "2025-10-05T11:19:00.840300",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FV",
-    "last_update": "2025-10-04T12:49:42.892449",
+    "last_update": "2025-10-05T11:10:23.672835",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FIDU",
-    "last_update": "2025-10-04T13:06:53.334000",
+    "last_update": "2025-10-05T11:27:34.990176",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

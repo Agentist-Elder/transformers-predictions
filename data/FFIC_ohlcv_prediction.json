@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FFIC",
-    "last_update": "2025-10-04T13:06:54.318859",
+    "last_update": "2025-10-05T11:27:36.018070",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

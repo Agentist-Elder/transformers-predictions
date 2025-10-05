@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VYM",
-    "last_update": "2025-10-04T12:49:43.778201",
+    "last_update": "2025-10-05T11:10:24.528992",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

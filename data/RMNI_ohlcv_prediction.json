@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "RMNI",
-    "last_update": "2025-10-04T12:58:08.632730",
+    "last_update": "2025-10-05T11:18:49.944878",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "VIOO",
-    "last_update": "2025-10-04T13:06:47.561070",
+    "last_update": "2025-10-05T11:27:29.317220",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

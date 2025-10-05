@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IFV",
-    "last_update": "2025-10-04T12:58:18.168537",
+    "last_update": "2025-10-05T11:18:59.462172",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

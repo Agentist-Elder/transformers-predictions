@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SMCF",
-    "last_update": "2025-10-04T12:58:09.153537",
+    "last_update": "2025-10-05T11:18:50.511989",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

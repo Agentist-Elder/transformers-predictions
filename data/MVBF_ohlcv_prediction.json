@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MVBF",
-    "last_update": "2025-10-04T13:06:45.288674",
+    "last_update": "2025-10-05T11:27:27.013713",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

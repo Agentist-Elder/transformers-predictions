@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HELE",
-    "last_update": "2025-10-04T13:06:43.511552",
+    "last_update": "2025-10-05T11:27:25.263311",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

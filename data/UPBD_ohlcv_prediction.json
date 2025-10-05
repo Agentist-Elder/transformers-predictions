@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "UPBD",
-    "last_update": "2025-10-04T13:06:40.780667",
+    "last_update": "2025-10-05T11:27:22.553917",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

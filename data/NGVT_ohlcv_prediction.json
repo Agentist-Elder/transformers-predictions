@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "NGVT",
-    "last_update": "2025-10-04T12:58:11.465779",
+    "last_update": "2025-10-05T11:18:52.783630",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TBT",
-    "last_update": "2025-10-04T13:06:45.495771",
+    "last_update": "2025-10-05T11:27:27.254287",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

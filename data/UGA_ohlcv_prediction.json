@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "UGA",
-    "last_update": "2025-10-04T13:06:41.331433",
+    "last_update": "2025-10-05T11:27:23.079613",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

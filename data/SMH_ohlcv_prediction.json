@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SMH",
-    "last_update": "2025-10-04T12:58:23.785789",
+    "last_update": "2025-10-05T11:19:05.099223",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MRCC",
-    "last_update": "2025-10-04T12:58:09.441429",
+    "last_update": "2025-10-05T11:18:50.774033",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TAP",
-    "last_update": "2025-10-04T13:06:50.133171",
+    "last_update": "2025-10-05T11:27:31.856580",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

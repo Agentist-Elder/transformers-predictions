@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "AAP",
-    "last_update": "2025-10-04T12:58:08.207410",
+    "last_update": "2025-10-05T11:18:49.518820",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FXC",
-    "last_update": "2025-10-04T12:49:43.224906",
+    "last_update": "2025-10-05T11:10:23.995505",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

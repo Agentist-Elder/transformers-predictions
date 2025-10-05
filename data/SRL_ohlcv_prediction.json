@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SRL",
-    "last_update": "2025-10-04T12:58:16.877438",
+    "last_update": "2025-10-05T11:18:58.199768",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

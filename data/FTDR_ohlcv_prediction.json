@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FTDR",
-    "last_update": "2025-10-04T13:06:38.488284",
+    "last_update": "2025-10-05T11:27:20.282655",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

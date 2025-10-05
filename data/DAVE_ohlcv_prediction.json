@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "DAVE",
-    "last_update": "2025-10-04T13:06:41.239330",
+    "last_update": "2025-10-05T11:27:23.033776",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

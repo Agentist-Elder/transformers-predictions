@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IBTA",
-    "last_update": "2025-10-04T12:58:12.345949",
+    "last_update": "2025-10-05T11:18:53.682000",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

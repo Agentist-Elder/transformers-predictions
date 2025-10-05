@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HEGD",
-    "last_update": "2025-10-04T12:58:22.536204",
+    "last_update": "2025-10-05T11:19:03.855755",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PSWD",
-    "last_update": "2025-10-04T13:06:48.370572",
+    "last_update": "2025-10-05T11:27:30.129448",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

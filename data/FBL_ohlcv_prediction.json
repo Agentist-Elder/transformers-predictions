@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FBL",
-    "last_update": "2025-10-04T13:06:35.409400",
+    "last_update": "2025-10-05T11:27:17.186437",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

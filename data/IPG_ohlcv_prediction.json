@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IPG",
-    "last_update": "2025-10-04T12:58:22.942038",
+    "last_update": "2025-10-05T11:19:04.290183",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

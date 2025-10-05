@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LI",
-    "last_update": "2025-10-04T13:06:39.157356",
+    "last_update": "2025-10-05T11:27:20.856209",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

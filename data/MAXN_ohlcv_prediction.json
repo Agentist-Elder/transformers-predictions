@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MAXN",
-    "last_update": "2025-10-04T12:49:46.948830",
+    "last_update": "2025-10-05T11:10:27.682416",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

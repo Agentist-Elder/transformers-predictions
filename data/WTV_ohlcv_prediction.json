@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "WTV",
-    "last_update": "2025-10-04T12:49:51.510710",
+    "last_update": "2025-10-05T11:10:32.139752",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

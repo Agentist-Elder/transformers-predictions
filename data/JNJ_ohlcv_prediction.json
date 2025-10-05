@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "JNJ",
-    "last_update": "2025-10-04T13:06:34.820632",
+    "last_update": "2025-10-05T11:27:16.559768",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "IMXI",
-    "last_update": "2025-10-04T12:49:37.056600",
+    "last_update": "2025-10-05T11:10:17.912471",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

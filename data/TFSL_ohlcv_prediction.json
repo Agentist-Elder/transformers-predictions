@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "TFSL",
-    "last_update": "2025-10-04T12:49:34.428639",
+    "last_update": "2025-10-05T11:10:15.307201",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

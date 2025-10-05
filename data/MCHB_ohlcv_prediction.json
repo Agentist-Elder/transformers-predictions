@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MCHB",
-    "last_update": "2025-10-04T12:49:44.939789",
+    "last_update": "2025-10-05T11:10:25.644319",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

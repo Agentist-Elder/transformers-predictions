@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "RLI",
-    "last_update": "2025-10-04T12:58:21.376185",
+    "last_update": "2025-10-05T11:19:02.859134",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

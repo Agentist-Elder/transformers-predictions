@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MFH",
-    "last_update": "2025-10-04T12:58:04.560400",
+    "last_update": "2025-10-05T11:18:45.911846",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

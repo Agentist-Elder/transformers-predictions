@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PAY",
-    "last_update": "2025-10-04T12:49:42.250140",
+    "last_update": "2025-10-05T11:10:23.042184",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

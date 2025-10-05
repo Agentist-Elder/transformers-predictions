@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "DAO",
-    "last_update": "2025-10-04T13:06:50.985263",
+    "last_update": "2025-10-05T11:27:32.650290",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

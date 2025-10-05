@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SNDR",
-    "last_update": "2025-10-04T12:49:49.681782",
+    "last_update": "2025-10-05T11:10:30.377654",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

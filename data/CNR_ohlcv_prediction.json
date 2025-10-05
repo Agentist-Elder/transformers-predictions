@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "CNR",
-    "last_update": "2025-10-04T12:49:41.664805",
+    "last_update": "2025-10-05T11:10:22.432059",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

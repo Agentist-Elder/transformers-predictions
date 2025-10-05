@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "PAMC",
-    "last_update": "2025-10-04T12:49:33.628535",
+    "last_update": "2025-10-05T11:10:14.545873",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

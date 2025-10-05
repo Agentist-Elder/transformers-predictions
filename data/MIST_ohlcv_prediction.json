@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MIST",
-    "last_update": "2025-10-04T12:58:15.786878",
+    "last_update": "2025-10-05T11:18:57.104298",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

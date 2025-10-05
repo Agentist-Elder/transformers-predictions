@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "HURN",
-    "last_update": "2025-10-04T13:06:35.782832",
+    "last_update": "2025-10-05T11:27:17.520667",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

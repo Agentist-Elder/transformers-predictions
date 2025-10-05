@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "LEA",
-    "last_update": "2025-10-04T12:58:17.107579",
+    "last_update": "2025-10-05T11:18:58.478324",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

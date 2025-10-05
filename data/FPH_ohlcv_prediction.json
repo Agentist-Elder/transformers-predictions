@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "FPH",
-    "last_update": "2025-10-04T13:06:48.728826",
+    "last_update": "2025-10-05T11:27:30.438186",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

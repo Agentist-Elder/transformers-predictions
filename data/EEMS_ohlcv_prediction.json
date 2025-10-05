@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "EEMS",
-    "last_update": "2025-10-04T12:58:19.180498",
+    "last_update": "2025-10-05T11:19:00.552343",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

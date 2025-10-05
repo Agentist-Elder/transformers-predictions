@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "YELP",
-    "last_update": "2025-10-04T13:06:37.325133",
+    "last_update": "2025-10-05T11:27:19.120771",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

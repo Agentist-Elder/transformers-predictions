@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "ROCK",
-    "last_update": "2025-10-04T12:58:09.895006",
+    "last_update": "2025-10-05T11:18:51.189457",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

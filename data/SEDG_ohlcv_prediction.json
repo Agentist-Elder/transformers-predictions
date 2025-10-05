@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "SEDG",
-    "last_update": "2025-10-04T12:58:21.685737",
+    "last_update": "2025-10-05T11:19:03.145545",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "NHI",
-    "last_update": "2025-10-04T12:58:25.127321",
+    "last_update": "2025-10-05T11:19:06.467622",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,

@@ -1,7 +1,7 @@
 {
   "ticker_info": {
     "symbol": "MBI",
-    "last_update": "2025-10-04T12:58:16.050881",
+    "last_update": "2025-10-05T11:18:57.451068",
     "model_type": "Kronos GPU Model (Transformer)",
     "lookback_days": 120,
     "prediction_days": 5,
