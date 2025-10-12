@@ -321,35 +321,51 @@ class KronosWorkflow:
             while prediction_end.weekday() >= 5:
                 prediction_end += timedelta(days=1)
 
-        # Handle both dict and PredictionResult object
-        if hasattr(raw_prediction, 'predictions'):
-            # It's a PredictionResult object
-            predictions = raw_prediction.predictions if raw_prediction.predictions else []
-            median_close = float(raw_prediction.median_close[-1]) if len(raw_prediction.median_close) > 0 else float(input_data['close'].iloc[-1])
+        # Handle different result types: BatchResult, dict, or PredictionResult
+        if hasattr(raw_prediction, 'predictions') and isinstance(raw_prediction.predictions, list):
+            # Check if it's a BatchResult (predictions is List[float]) or PredictionResult (predictions is List[DataFrame])
+            predictions_list = raw_prediction.predictions
+
+            if predictions_list and isinstance(predictions_list[0], (int, float, np.number)):
+                # It's a BatchResult - predictions is a simple list of floats (aggregated)
+                # This is already the aggregated median from Monte Carlo runs
+                median_close = float(predictions_list[-1]) if len(predictions_list) > 0 else float(input_data['close'].iloc[-1])
+                # Create simple candlestick data from the predictions
+                candlesticks = []
+                for i, pred_close in enumerate(predictions_list[:self.config['prediction_days']]):
+                    # Simple approximation: use close price with small variations for OHLC
+                    close_val = float(pred_close)
+                    candlesticks.append({
+                        'open': close_val * 0.998,   # ~0.2% lower
+                        'high': close_val * 1.002,   # ~0.2% higher
+                        'low': close_val * 0.997,    # ~0.3% lower
+                        'close': close_val
+                    })
+            elif predictions_list and isinstance(predictions_list[0], pd.DataFrame):
+                # It's a PredictionResult - predictions is a list of DataFrames
+                median_close = float(predictions_list[-1]['close'].iloc[-1]) if len(predictions_list) > 0 else float(input_data['close'].iloc[-1])
+                # Convert DataFrame predictions to candlestick format
+                candlesticks = []
+                for pred_df in predictions_list[:self.config['prediction_days']]:
+                    if isinstance(pred_df, pd.DataFrame) and len(pred_df) > 0:
+                        candlesticks.append({
+                            'open': float(pred_df['open'].iloc[-1]) if 'open' in pred_df else float(pred_df.iloc[-1]),
+                            'high': float(pred_df['high'].iloc[-1]) if 'high' in pred_df else float(pred_df.iloc[-1]),
+                            'low': float(pred_df['low'].iloc[-1]) if 'low' in pred_df else float(pred_df.iloc[-1]),
+                            'close': float(pred_df['close'].iloc[-1]) if 'close' in pred_df else float(pred_df.iloc[-1])
+                        })
+            else:
+                # Empty predictions
+                median_close = float(input_data['close'].iloc[-1])
+                candlesticks = []
         elif isinstance(raw_prediction, dict):
             # It's a dictionary
-            predictions = raw_prediction.get('predictions', [])
-            median_close = float(np.median([p[-1] for p in predictions])) if predictions else float(input_data['close'].iloc[-1])
-        else:
-            # Fallback
-            predictions = []
-            median_close = float(input_data['close'].iloc[-1])
-
-        # Get candlesticks data
-        if hasattr(raw_prediction, 'predictions') and raw_prediction.predictions:
-            # Convert predictions to candlestick format
-            candlesticks = []
-            for pred_df in raw_prediction.predictions[:self.config['prediction_days']]:
-                if isinstance(pred_df, pd.DataFrame) and len(pred_df) > 0:
-                    candlesticks.append({
-                        'open': float(pred_df['open'].iloc[-1]) if 'open' in pred_df else float(pred_df.iloc[-1]),
-                        'high': float(pred_df['high'].iloc[-1]) if 'high' in pred_df else float(pred_df.iloc[-1]),
-                        'low': float(pred_df['low'].iloc[-1]) if 'low' in pred_df else float(pred_df.iloc[-1]),
-                        'close': float(pred_df['close'].iloc[-1]) if 'close' in pred_df else float(pred_df.iloc[-1])
-                    })
-        elif isinstance(raw_prediction, dict):
+            predictions_data = raw_prediction.get('predictions', [])
+            median_close = float(np.median([p[-1] for p in predictions_data])) if predictions_data else float(input_data['close'].iloc[-1])
             candlesticks = raw_prediction.get('candlesticks', [])
         else:
+            # Fallback
+            median_close = float(input_data['close'].iloc[-1])
             candlesticks = []
 
         return {
@@ -358,11 +374,12 @@ class KronosWorkflow:
                 'model_type': 'Kronos GPU Model (Transformer)',
                 'lookback_days': self.config['lookback_days'],
                 'prediction_days': self.config['prediction_days'],
-                'monte_carlo_runs': self.config['monte_carlo_runs']
+                'monte_carlo_runs': self.config['monte_carlo_runs'],
+                'last_update': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             },
             'data': {
                 'historical_candlesticks': self._format_candlesticks(input_data),
-                'predicted_candlesticks': candlesticks
+                'predicted': candlesticks
             },
             'summary': {
                 'input_start_date': input_start.strftime('%Y-%m-%d'),
@@ -371,6 +388,8 @@ class KronosWorkflow:
                 'prediction_start_date': prediction_start.strftime('%Y-%m-%d'),
                 'prediction_end_date': prediction_end.strftime('%Y-%m-%d'),
                 'prediction_length': self.config['prediction_days'],
+                'lookback_start': input_start.strftime('%Y-%m-%d'),
+                'lookback_end': input_end.strftime('%Y-%m-%d'),
                 'input_end_date_close': float(input_data['close'].iloc[-1]),
                 'predicted_end_close_price': median_close,
                 'predicted_move': (median_close / float(input_data['close'].iloc[-1]) - 1) * 100
@@ -381,8 +400,19 @@ class KronosWorkflow:
         """Format OHLCV data as candlesticks"""
         candlesticks = []
         for idx, row in data.iterrows():
+            # Handle both datetime and integer indices
+            if isinstance(idx, (int, np.integer)):
+                # Integer index - convert to date string
+                date_str = pd.to_datetime(idx, unit='D', origin='unix').strftime('%Y-%m-%d')
+            elif hasattr(idx, 'strftime'):
+                # DateTime index
+                date_str = idx.strftime('%Y-%m-%d')
+            else:
+                # Fallback to string representation
+                date_str = str(idx)
+
             candlesticks.append({
-                'date': idx.strftime('%Y-%m-%d'),
+                'date': date_str,
                 'open': float(row['open']),
                 'high': float(row['high']),
                 'low': float(row['low']),
@@ -399,10 +429,10 @@ class KronosWorkflow:
             predictions
         )
 
-        logger.info(f"Updated {len(successful)} prediction files")
+        logger.info(f"Updated {successful} prediction files")
 
-        if failed:
-            logger.warning(f"Failed to update {len(failed)} files: {failed}")
+        if failed > 0:
+            logger.warning(f"Failed to update {failed} files")
 
         # Cleanup old predictions
         cleanup_count = self.json_updater.cleanup_old_predictions(
@@ -412,7 +442,7 @@ class KronosWorkflow:
         if cleanup_count > 0:
             logger.info(f"Cleaned up {cleanup_count} old prediction files")
 
-        return len(successful), len(failed)
+        return successful, failed
 
     def update_statistics(self, predictions: Dict[str, Any]):
         """Update homepage statistics"""
