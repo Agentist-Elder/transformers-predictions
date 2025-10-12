@@ -18,6 +18,10 @@ import numpy as np
 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 import torch
 
+# CRITICAL: Set PyTorch CUDA memory allocator to reduce fragmentation
+# This matches the kronos-backtest example scripts
+os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
+
 # Add source directories to path
 sys.path.append(str(Path(__file__).parent.parent / 'src'))
 sys.path.append(str(Path(__file__).parent))
@@ -62,7 +66,7 @@ class KronosWorkflow:
             'finnhub_data_dir': '/home/jarden/finnhub-data',
             'predictions_dir': '/home/jarden/transformers-predictions/data',
             'ticker_file': '/home/jarden/option-data/unique_underlying_symbols.txt',
-            'model_path': '/home/jarden/kronos-pipeline/kronos-base',
+            'model_path': '/home/jarden/kronos-models/kronos-models/Kronos-base/model.safetensors',
             'lookback_days': 120,
             'prediction_days': 5,
             'monte_carlo_runs': 10,
@@ -92,6 +96,16 @@ class KronosWorkflow:
             predictions_path=self.config['predictions_dir']
         )
 
+        # Kronos model wrapper - initialize FIRST
+        from batch_processing.kronos_integration import KronosModelConfig
+        model_config = KronosModelConfig(
+            model_path=self.config.get('model_path', '/home/jarden/kronos-pipeline/kronos-base'),
+            sequence_length=self.config.get('lookback_days', 120),
+            prediction_horizon=self.config.get('prediction_days', 5)
+        )
+        self.model = KronosModelWrapper(model_config)
+        self.model.load_model()  # Load model onto GPU
+
         # Batch processing with GPU
         from batch_processing.batch_processor import BatchStrategy
         strategy_map = {
@@ -108,14 +122,9 @@ class KronosWorkflow:
             min_batch_size=self.config.get('min_batch_size', 1)
         )
 
-        # Kronos model wrapper
-        from batch_processing.kronos_integration import KronosModelConfig
-        model_config = KronosModelConfig(
-            model_path=self.config.get('model_path', '/home/jarden/kronos-pipeline/kronos-base'),
-            sequence_length=self.config.get('lookback_days', 120),
-            prediction_horizon=self.config.get('prediction_days', 5)
-        )
-        self.model = KronosModelWrapper(model_config)
+        # Connect model to batch processor
+        self.batch_processor.set_model(self.model)
+        logger.info(f"Model loaded on device: {self.model.device}")
 
         # JSON updater
         self.json_updater = JSONUpdater(
@@ -244,45 +253,104 @@ class KronosWorkflow:
         logger.info("Starting batch predictions with GPU optimization...")
 
         # Run predictions with automatic batch sizing
-        results = self.batch_processor.run_batch(
+        batch_result = self.batch_processor.run_batch(
             tickers=list(batch_data.keys()),
             lookback_data=batch_data,
             batch_fraction=1.0  # Start with full batch
         )
 
-        # Process results
+        # Handle tuple return (results, metrics) or single BatchResult object
+        if isinstance(batch_result, tuple):
+            results, metrics = batch_result
+        else:
+            results = batch_result.results if hasattr(batch_result, 'results') else batch_result
+            metrics = batch_result.metrics if hasattr(batch_result, 'metrics') else None
+
+        # Process results - handle both list of result objects and dict
         predictions = {}
-        for ticker, result in results.successful.items():
-            predictions[ticker] = self._format_prediction(
-                ticker,
-                batch_data[ticker],
-                result
-            )
+
+        if isinstance(results, dict):
+            # Results is already a dictionary of ticker -> prediction data
+            for ticker, prediction_data in results.items():
+                if ticker in batch_data:
+                    predictions[ticker] = self._format_prediction(
+                        ticker,
+                        batch_data[ticker],
+                        prediction_data
+                    )
+        elif isinstance(results, list):
+            # Results is a list of result objects
+            successful_results = {r.ticker: r for r in results if hasattr(r, 'success') and r.success}
+            for ticker, result in successful_results.items():
+                predictions[ticker] = self._format_prediction(
+                    ticker,
+                    batch_data[ticker],
+                    result
+                )
+        else:
+            logger.error(f"Unexpected results type: {type(results)}")
+            return {}
 
         logger.info(f"Generated predictions for {len(predictions)} tickers")
 
-        if results.failed:
-            logger.warning(f"Failed predictions: {list(results.failed.keys())}")
+        if metrics:
+            if hasattr(metrics, 'successful_tickers'):
+                logger.info(f"Batch metrics: {metrics.successful_tickers} successful, {metrics.failed_tickers} failed")
+            elif isinstance(metrics, dict):
+                logger.info(f"Batch metrics: {metrics.get('successful', 0)} successful, {metrics.get('failed', 0)} failed")
 
         return predictions
 
     def _format_prediction(self, ticker: str,
                           input_data: pd.DataFrame,
-                          raw_prediction: Dict) -> Dict:
+                          raw_prediction) -> Dict:
         """Format prediction for JSON and CSV export"""
-        input_start = input_data.index[0]
-        input_end = input_data.index[-1]
+        input_start = pd.to_datetime(input_data.index[0])
+        input_end = pd.to_datetime(input_data.index[-1])
 
-        # Calculate prediction dates (next week)
-        prediction_start = input_end + timedelta(days=3)  # Next Monday
-        prediction_end = prediction_start + timedelta(days=4)  # Next Friday
+        # Calculate prediction dates (next 5 trading days)
+        prediction_start = input_end + timedelta(days=1)
+        # Skip to next trading day (Monday if input_end is Friday)
+        while prediction_start.weekday() >= 5:
+            prediction_start += timedelta(days=1)
 
-        # Get median prediction from Monte Carlo runs
-        predictions = raw_prediction.get('predictions', [])
-        if predictions:
-            median_close = float(np.median([p[-1] for p in predictions]))
+        # Calculate end date (5 trading days from start)
+        prediction_end = prediction_start
+        for _ in range(self.config['prediction_days'] - 1):
+            prediction_end += timedelta(days=1)
+            while prediction_end.weekday() >= 5:
+                prediction_end += timedelta(days=1)
+
+        # Handle both dict and PredictionResult object
+        if hasattr(raw_prediction, 'predictions'):
+            # It's a PredictionResult object
+            predictions = raw_prediction.predictions if raw_prediction.predictions else []
+            median_close = float(raw_prediction.median_close[-1]) if len(raw_prediction.median_close) > 0 else float(input_data['close'].iloc[-1])
+        elif isinstance(raw_prediction, dict):
+            # It's a dictionary
+            predictions = raw_prediction.get('predictions', [])
+            median_close = float(np.median([p[-1] for p in predictions])) if predictions else float(input_data['close'].iloc[-1])
         else:
+            # Fallback
+            predictions = []
             median_close = float(input_data['close'].iloc[-1])
+
+        # Get candlesticks data
+        if hasattr(raw_prediction, 'predictions') and raw_prediction.predictions:
+            # Convert predictions to candlestick format
+            candlesticks = []
+            for pred_df in raw_prediction.predictions[:self.config['prediction_days']]:
+                if isinstance(pred_df, pd.DataFrame) and len(pred_df) > 0:
+                    candlesticks.append({
+                        'open': float(pred_df['open'].iloc[-1]) if 'open' in pred_df else float(pred_df.iloc[-1]),
+                        'high': float(pred_df['high'].iloc[-1]) if 'high' in pred_df else float(pred_df.iloc[-1]),
+                        'low': float(pred_df['low'].iloc[-1]) if 'low' in pred_df else float(pred_df.iloc[-1]),
+                        'close': float(pred_df['close'].iloc[-1]) if 'close' in pred_df else float(pred_df.iloc[-1])
+                    })
+        elif isinstance(raw_prediction, dict):
+            candlesticks = raw_prediction.get('candlesticks', [])
+        else:
+            candlesticks = []
 
         return {
             'ticker_info': {
@@ -294,7 +362,7 @@ class KronosWorkflow:
             },
             'data': {
                 'historical_candlesticks': self._format_candlesticks(input_data),
-                'predicted_candlesticks': raw_prediction.get('candlesticks', [])
+                'predicted_candlesticks': candlesticks
             },
             'summary': {
                 'input_start_date': input_start.strftime('%Y-%m-%d'),
@@ -438,8 +506,12 @@ class KronosWorkflow:
             logger.error(f"Deployment error: {e}")
             return False
 
-    def run_workflow(self) -> Dict[str, Any]:
-        """Execute the complete workflow"""
+    def run_workflow(self, force: bool = False) -> Dict[str, Any]:
+        """Execute the complete workflow
+
+        Args:
+            force: If True, skip the new data check and process all tickers
+        """
         logger.info("=" * 60)
         logger.info("Starting Kronos Predictions Workflow")
         logger.info("=" * 60)
@@ -455,13 +527,26 @@ class KronosWorkflow:
         }
 
         try:
-            # Step 1: Check for new data
-            has_new_data, latest_friday = self.check_for_new_data()
+            # Step 1: Check for new data (skip if force=True)
+            if force:
+                logger.info("Force mode enabled - skipping new data check")
+                # Use the most recent available date from data
+                has_new_data = True
+                # Try to get latest Friday, if that fails use 2025-10-03 (known last date)
+                latest_friday = self.data_comparator.get_latest_friday_data()
+                if latest_friday is None:
+                    # Fallback to hardcoded date if we can't detect it
+                    latest_friday = datetime(2025, 10, 3)
+                    logger.warning(f"Could not detect latest Friday, using fallback date: {latest_friday}")
+                else:
+                    logger.info(f"Using most recent available data: {latest_friday}")
+            else:
+                has_new_data, latest_friday = self.check_for_new_data()
 
-            if not has_new_data:
-                logger.info("No new data to process")
-                results['message'] = "No new Friday data available"
-                return results
+                if not has_new_data:
+                    logger.info("No new data to process")
+                    results['message'] = "No new Friday data available"
+                    return results
 
             # Step 2: Load tickers
             tickers = self.load_tickers()
@@ -575,8 +660,8 @@ def main():
         logger.info(f"Latest Friday: {latest}")
         return 0
 
-    # Run the workflow
-    results = workflow.run_workflow()
+    # Run the workflow with force flag
+    results = workflow.run_workflow(force=args.force)
 
     # Exit with appropriate code
     return 0 if results['success'] else 1

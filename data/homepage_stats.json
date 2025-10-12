@@ -1,0 +1,81 @@
+{
+  "overall_direction": "NEUTRAL",
+  "total_predictions": 10919,
+  "last_updated": "2025-10-06T02:33:36.517928",
+  "statistics": {
+    "total_predictions": 10919,
+    "bullish_count": 4724,
+    "bearish_count": 2729,
+    "neutral_count": 3466,
+    "avg_movement": 5212754711184.13,
+    "avg_confidence": 86.0,
+    "high_confidence_count": 1857
+  },
+  "top_predictions": [
+    {
+      "ticker": "TIOG",
+      "direction": "Bearish",
+      "change_pct": -956.19,
+      "confidence": 83,
+      "predicted_price": -0.256,
+      "current_price": 0.0299
+    },
+    {
+      "ticker": "NOVAQ",
+      "direction": "Bullish",
+      "change_pct": 566.67,
+      "confidence": 81,
+      "predicted_price": 0.002,
+      "current_price": 0.0003
+    },
+    {
+      "ticker": "QMMM",
+      "direction": "Bullish",
+      "change_pct": 561.07,
+      "confidence": 85.0,
+      "predicted_price": 789.3192536531257,
+      "current_price": 119.4
+    },
+    {
+      "ticker": "CRWG",
+      "direction": "Bullish",
+      "change_pct": 457.8,
+      "confidence": 94,
+      "predicted_price": 72.905,
+      "current_price": 13.07
+    },
+    {
+      "ticker": "BBBY",
+      "direction": "Bullish",
+      "change_pct": 248.09,
+      "confidence": 89,
+      "predicted_price": 41.840999999999994,
+      "current_price": 12.02
+    },
+    {
+      "ticker": "NAKAW",
+      "direction": "Bearish",
+      "change_pct": -243.12,
+      "confidence": 85.0,
+      "predicted_price": -21.89797292812407,
+      "current_price": 15.3
+    }
+  ],
+  "distribution": {
+    "by_direction": {
+      "bullish": 4724,
+      "bearish": 2729,
+      "neutral": 3466,
+      "bullish_pct": 43.3,
+      "bearish_pct": 25.0,
+      "neutral_pct": 31.7
+    },
+    "by_timeframe": {
+      "5d": 10919
+    }
+  },
+  "accuracy_metrics": {
+    "available": false,
+    "message": "No historical data available for accuracy calculation"
+  }
+}
