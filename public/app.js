@@ -170,11 +170,18 @@ class OHLCVDashboard {
     }
 
     createChart(data) {
+        // Properly destroy existing chart and clean up canvas
+        const canvas = document.getElementById('ohlcChart');
+        const existingChart = Chart.getChart(canvas);
+        if (existingChart) {
+            existingChart.destroy();
+        }
         if (this.chart) {
             this.chart.destroy();
+            this.chart = null;
         }
 
-        const ctx = document.getElementById('ohlcChart').getContext('2d');
+        const ctx = canvas.getContext('2d');
         const datasets = [];
 
         // Create proper candlestick visualization
